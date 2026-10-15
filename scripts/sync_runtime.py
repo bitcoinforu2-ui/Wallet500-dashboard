@@ -40,7 +40,7 @@ def wait_for_projection(fetch, *, budget=480, clock=time.monotonic, pause=time.s
 source = wait_for_projection(fetch_source)
 if source_age(source) > 1500:
     print("::warning::Engine projection is stale; original timestamps are preserved.")
-keys = ("generated_at", "market_observed_at", "status", "scan_outcome", "delivery_status", "delivery_confirmed", "pre_buy_count", "buy_zone_count", "evaluated_targets", "observable_coverage_pct", "error_count", "run_url", "scan_completed_at", "decisions_at", "data_quality", "observable_targets", "market_targets_attempted", "market_targets_deferred", "pre_buy_delivered", "risk_alerts_delivered", "decisions_total", "market_data_target_count", "market_data_observed_count", "market_data_coverage_pct", "market_data_observed_at", "market_data_deferred_count", "market_data_unavailable_count", "market_data_request_count", "market_data_semantics")
+keys = ("generated_at", "market_observed_at", "status", "scan_outcome", "delivery_status", "delivery_confirmed", "pre_buy_count", "buy_zone_count", "evaluated_targets", "observable_coverage_pct", "error_count", "run_url", "scan_completed_at", "decisions_at", "data_quality", "observable_targets", "market_targets_attempted", "market_targets_deferred", "pre_buy_delivered", "risk_alerts_delivered", "decisions_total", "market_data_target_count", "market_data_observed_count", "market_data_coverage_pct", "market_data_observed_at", "market_data_deferred_count", "market_data_unavailable_count", "market_data_request_count", "market_data_semantics", "deep_coverage_pct", "deep_observable_targets")
 if not isinstance(source, dict) or not isinstance(source.get("decisions"), list):
     raise ValueError("Invalid projection")
 result = {key: source.get(key) for key in keys}
