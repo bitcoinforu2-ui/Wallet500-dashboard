@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T12:03:10.089627+00:00",
+  "generated_at": "2026-10-15T12:11:03.653267+00:00",
   "market_observed_at": "2026-10-15T12:02:50.489788+00:00",
   "status": "LIVE",
   "scan_outcome": "success",
@@ -516,8 +516,12 @@
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "NEED_SECOND_VERIFIED_SCAN"
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "SHORT_TERM_PRICE_RECLAIM_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
       ],
       "observed_at": null,
       "observable": null,
