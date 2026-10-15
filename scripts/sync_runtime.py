@@ -8,7 +8,7 @@ if not token:
     print("::warning::DASHBOARD_SOURCE_TOKEN is missing; retained snapshot will expire normally.")
     raise SystemExit(0)
 url = "https://api.github.com/repos/bitcoinforu2-ui/Wallet500-v2/contents/data/v2-runtime-status.json?ref=main"
-request = urllib.request.Request(url, headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github.raw+json", "X-GitHub-Api-Version": "2022-11-28"})
+request = urllib.request.Request(url, headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github.raw+json", "Cache-Control": "no-cache", "X-GitHub-Api-Version": "2022-11-28"})
 def fetch_source():
     with urllib.request.urlopen(request, timeout=30) as response:
         raw = response.read(2_000_001)
@@ -27,7 +27,7 @@ def source_age(source):
     except (ValueError, TypeError):
         return float("inf")
 
-def wait_for_projection(fetch, *, budget=480, clock=time.monotonic, pause=time.sleep):
+def wait_for_projection(fetch, *, budget=900, clock=time.monotonic, pause=time.sleep):
     started = clock()
     source = fetch()
     # Engine and Pages schedules can start together. Wait for the active
