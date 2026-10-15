@@ -20,6 +20,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Sync the sanitized engine projection
         env:
           SOURCE_TOKEN: ${{ secrets.DASHBOARD_SOURCE_TOKEN }}
@@ -45,5 +47,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          name: pages-${{ github.run_attempt }}
       - uses: actions/deploy-pages@v4
         id: deploy
+        with:
+          artifact_name: pages-${{ github.run_attempt }}
