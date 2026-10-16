@@ -44,6 +44,9 @@ keys = ("generated_at", "market_observed_at", "status", "scan_outcome", "deliver
 if not isinstance(source, dict) or not isinstance(source.get("decisions"), list):
     raise ValueError("Invalid projection")
 result = {key: source.get(key) for key in keys}
+followup = source.get("discovery_followup")
+followup_keys = ("registered", "interval_seconds", "late_after_seconds", "basic_overdue_1h", "basic_overdue_2h", "full_verification_due", "semantics")
+result["discovery_followup"] = {key: followup.get(key) for key in followup_keys} if isinstance(followup, dict) else {}
 result["decisions"] = [{key: row.get(key) for key in ("symbol", "identity_key", "state", "pre_buy", "reasons", "observed_at", "observable", "market", "market_observation")} for row in source["decisions"][:100] if isinstance(row, dict)]
 result["discovery_movers"] = [{key: row.get(key) for key in ("symbol", "price_usd", "change_24h_pct", "volume_24h_usd", "observed_at", "url", "state")} for row in (source.get("discovery_movers") or [])[:30] if isinstance(row, dict)]
 target = Path("data/v2-runtime-status.json")
