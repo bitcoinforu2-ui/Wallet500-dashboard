@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-10-23T22:47:39.216797+00:00",
-  "market_observed_at": "2026-10-23T22:47:08.694696+00:00",
+  "generated_at": "2026-10-24T00:09:27.883149+00:00",
+  "market_observed_at": "2026-10-24T00:04:58.543644+00:00",
   "status": "LIVE",
   "scan_outcome": "success",
   "delivery_status": "CONFIGURED",
   "delivery_confirmed": 0,
   "pre_buy_count": 0,
   "buy_zone_count": 0,
-  "evaluated_targets": 1266,
-  "observable_coverage_pct": 49.61,
+  "evaluated_targets": 1268,
+  "observable_coverage_pct": 46.45,
   "error_count": 0,
-  "run_url": "https://github.com/bitcoinforu2-ui/Wallet500-v2/actions/runs/40035107956",
-  "scan_completed_at": "2026-10-23T22:47:09.238977+00:00",
-  "decisions_at": "2026-10-23T22:47:15.528067+00:00",
+  "run_url": "https://github.com/bitcoinforu2-ui/Wallet500-v2/actions/runs/40042607807",
+  "scan_completed_at": "2026-10-24T00:04:59.241449+00:00",
+  "decisions_at": "2026-10-24T00:09:12.676670+00:00",
   "data_quality": "LIMITED",
-  "observable_targets": 628,
-  "market_targets_attempted": 1312,
-  "market_targets_deferred": 1759,
+  "observable_targets": 589,
+  "market_targets_attempted": 1260,
+  "market_targets_deferred": 1813,
   "pre_buy_delivered": 0,
   "risk_alerts_delivered": 0,
-  "decisions_total": 1266,
-  "market_data_target_count": 3032,
-  "market_data_observed_count": 2024,
-  "market_data_coverage_pct": 66.75,
-  "market_data_observed_at": "2026-10-23T22:43:22.637760+00:00",
+  "decisions_total": 1268,
+  "market_data_target_count": 3034,
+  "market_data_observed_count": 2033,
+  "market_data_coverage_pct": 67.01,
+  "market_data_observed_at": "2026-10-24T00:01:13.273833+00:00",
   "market_data_deferred_count": 0,
-  "market_data_unavailable_count": 1008,
+  "market_data_unavailable_count": 1001,
   "market_data_request_count": 77,
   "market_data_semantics": "BASIC_QUOTES_NOT_INDEPENDENT_INTELLIGENCE_OR_BUY_EXECUTION",
-  "deep_coverage_pct": 23.3,
-  "deep_observable_targets": 295,
+  "deep_coverage_pct": 25.55,
+  "deep_observable_targets": 324,
   "discovery_followup": {
-    "registered": 3071,
+    "registered": 3073,
     "interval_seconds": 3600,
     "late_after_seconds": 7200,
-    "basic_overdue_1h": 1036,
-    "basic_overdue_2h": 1036,
-    "full_verification_due": 1886,
+    "basic_overdue_1h": 1040,
+    "basic_overdue_2h": 1035,
+    "full_verification_due": 1923,
     "semantics": "BASIC_FOLLOWUP_IS_NOT_BUY; FAILED_REQUESTS_NEVER_RETIMESTAMPED"
   },
   "decisions": [
@@ -53,19 +53,19 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0001399,
-        "liquidity_usd": 55568.44,
-        "volume_h1_usd": 251.58,
-        "activity_h1": 2,
+        "price_usd": 0.0001354,
+        "liquidity_usd": 54175.83,
+        "volume_h1_usd": 194.26,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0001399,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
+        "price_usd": 0.0001354,
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -86,19 +86,19 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
       "observable": true,
       "market": {
         "price_usd": 2.17e-05,
         "liquidity_usd": 19420.58,
-        "volume_h1_usd": 10.85,
-        "activity_h1": 1,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
         "price_usd": 2.17e-05,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -110,25 +110,57 @@
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:14.602546+00:00",
+      "observed_at": "2026-10-24T00:01:05.879371+00:00",
       "observable": true,
       "market": {
         "price_usd": 2.331e-05,
         "liquidity_usd": 25486.7,
-        "volume_h1_usd": 26593.08,
-        "activity_h1": 199,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
         "price_usd": 2.331e-05,
-        "observed_at": "2026-10-23T22:43:14.602546+00:00",
+        "observed_at": "2026-10-24T00:01:05.879371+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "DNA",
+      "identity_key": "bsc:0xa991f61940095aea0724ef54077223b048c5cf7b:0x005db8721ef9dadccf8b99f151b1763e8c58ba61",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "NEW_LISTING_FAST_LANE_EXPIRED_OR_UNTIMED",
+        "PRICE_SOURCE_REDUNDANCY_MISSING"
+      ],
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.1915,
+        "liquidity_usd": 81385.13,
+        "volume_h1_usd": 22394.2,
+        "activity_h1": 183,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.1915,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -150,7 +182,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
       "observable": true,
       "market": {
         "price_usd": 132.81,
@@ -162,39 +194,7 @@
       },
       "market_observation": {
         "price_usd": 132.81,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "DNA",
-      "identity_key": "bsc:0xa991f61940095aea0724ef54077223b048c5cf7b:0x005db8721ef9dadccf8b99f151b1763e8c58ba61",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "NEW_LISTING_FAST_LANE_EXPIRED_OR_UNTIMED",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.1812,
-        "liquidity_usd": 78262.04,
-        "volume_h1_usd": 14714.72,
-        "activity_h1": 160,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.1812,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -207,6 +207,7 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
@@ -215,19 +216,19 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
       "observable": true,
       "market": {
-        "price_usd": 660.64,
-        "liquidity_usd": 15411.9,
-        "volume_h1_usd": 13.1,
-        "activity_h1": 3,
+        "price_usd": 661.059,
+        "liquidity_usd": 15419.42,
+        "volume_h1_usd": 20.07,
+        "activity_h1": 4,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 660.64,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
+        "price_usd": 661.059,
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -249,19 +250,19 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
       "observable": true,
       "market": {
-        "price_usd": 88.68,
-        "liquidity_usd": 4051.41,
+        "price_usd": 88.67,
+        "liquidity_usd": 4051.33,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 88.68,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
+        "price_usd": 88.67,
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -285,11 +286,11 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:23.874493+00:00",
+      "observed_at": "2026-10-24T00:01:14.232384+00:00",
       "observable": true,
       "market": {
         "price_usd": 654.545833832724,
-        "liquidity_usd": 1997.5901,
+        "liquidity_usd": 1989.5362,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
@@ -316,7 +317,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:23.874493+00:00",
+      "observed_at": "2026-10-24T00:01:14.232384+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.0018437931287198,
@@ -344,19 +345,19 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:44:55.783677+00:00",
+      "observed_at": "2026-10-24T00:03:14.954544+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.07331,
         "liquidity_usd": 9496.05,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
-        "cex_depth_1pct_usd": 8783.69281,
-        "cex_orderbook_spread_pct": 0.1496819259074406
+        "cex_depth_1pct_usd": 12872.11997,
+        "cex_orderbook_spread_pct": 0.11905549308815777
       },
       "market_observation": {
         "price_usd": 0.07331,
-        "observed_at": "2026-10-23T22:43:21.523156+00:00",
+        "observed_at": "2026-10-24T00:01:12.182202+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -378,19 +379,19 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:44:56.483210+00:00",
+      "observed_at": "2026-10-24T00:03:18.208097+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.001204,
         "liquidity_usd": 4659.32,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
-        "cex_depth_1pct_usd": 250.6256435,
+        "cex_depth_1pct_usd": 240.62590129999998,
         "cex_orderbook_spread_pct": 0.9954410473043639
       },
       "market_observation": {
         "price_usd": 0.001204,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -408,19 +409,19 @@
         "HARD_RISK_PRESENT",
         "NEED_SECOND_VERIFIED_SCAN"
       ],
-      "observed_at": "2026-10-23T22:45:09.372323+00:00",
+      "observed_at": "2026-10-24T00:03:27.795568+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.053651491658783454,
-        "liquidity_usd": 421863.9107,
-        "volume_h1_usd": 200435.152069513,
-        "activity_h1": 2320,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 2.962554052810747
+        "price_usd": 0.05118,
+        "liquidity_usd": 412685.3,
+        "volume_h1_usd": 101369.33,
+        "activity_h1": 1283,
+        "cex_depth_1pct_usd": 35.38662,
+        "cex_orderbook_spread_pct": 1.8834608593290219
       },
       "market_observation": {
-        "price_usd": 0.0525,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.05177,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -444,15 +445,15 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:16.897139+00:00",
+      "observed_at": "2026-10-24T00:03:43.034241+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.01485613706,
         "liquidity_usd": 35962.3818,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
-        "cex_depth_1pct_usd": 1768.076996,
-        "cex_orderbook_spread_pct": 0.8234853751136189
+        "cex_depth_1pct_usd": 3142.3100910000003,
+        "cex_orderbook_spread_pct": 0.6625033939723083
       },
       "market_observation": null
     },
@@ -468,19 +469,19 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:22.093775+00:00",
+      "observed_at": "2026-10-24T00:03:50.592998+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0007918188466068915,
-        "liquidity_usd": 77138.856,
-        "volume_h1_usd": 8861.0524860486,
-        "activity_h1": 71,
+        "price_usd": 0.0007058235368358079,
+        "liquidity_usd": 72854.8317,
+        "volume_h1_usd": 4774.0800350246,
+        "activity_h1": 76,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0007847,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
+        "price_usd": 0.0006946,
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -501,19 +502,19 @@
         "PRICE_SOURCE_SPREAD_TOO_WIDE",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:30.108210+00:00",
+      "observed_at": "2026-10-24T00:03:52.948177+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0001699,
+        "price_usd": 0.000176,
         "liquidity_usd": 0.0,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 30.10928070461589
+        "cex_orderbook_spread_pct": 29.700778172109526
       },
       "market_observation": {
-        "price_usd": 0.0001699,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
+        "price_usd": 0.000176,
+        "observed_at": "2026-10-24T00:00:47.024654+00:00",
         "source": "GATE_BULK_SPOT_TICKER",
         "identity_scope": "EXACT_CEX_MARKET",
         "price_source_count": 1
@@ -533,21 +534,55 @@
         "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
         "PRE_BUY_PRICE_CHASE_FROM_ALERT"
       ],
-      "observed_at": "2026-10-23T22:45:30.310118+00:00",
+      "observed_at": "2026-10-24T00:03:54.573684+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.08082,
-        "liquidity_usd": 1464257.89,
-        "volume_h1_usd": 380531.68,
-        "activity_h1": 4495,
-        "cex_depth_1pct_usd": 5898.86589,
-        "cex_orderbook_spread_pct": 0.21051328091138582
+        "price_usd": 0.0773049174003845,
+        "liquidity_usd": 1448665.1068,
+        "volume_h1_usd": 236480.067350998,
+        "activity_h1": 3107,
+        "cex_depth_1pct_usd": 7332.88682,
+        "cex_orderbook_spread_pct": 0.12889920082495857
       },
       "market_observation": {
-        "price_usd": 0.08213,
-        "observed_at": "2026-10-23T22:43:20.532011+00:00",
+        "price_usd": 0.07728,
+        "observed_at": "2026-10-24T00:01:11.159331+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "MEZO",
+      "identity_key": "cex:gate:MEZO_USDT",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_SPREAD_TOO_WIDE",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:04:04.026775+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.004057,
+        "liquidity_usd": 0.0,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 2.004889975550134
+      },
+      "market_observation": {
+        "price_usd": 0.004152,
+        "observed_at": "2026-10-24T00:00:47.024654+00:00",
+        "source": "GATE_BULK_SPOT_TICKER",
+        "identity_scope": "EXACT_CEX_MARKET",
         "price_source_count": 1
       }
     },
@@ -560,58 +595,57 @@
         "BUY_FLOW_NOT_CONFIRMED",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "HARD_RISK_PRESENT",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING"
+        "NEED_SECOND_VERIFIED_SCAN"
       ],
-      "observed_at": "2026-10-23T22:45:38.055542+00:00",
+      "observed_at": "2026-10-24T00:04:04.173674+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.1022,
-        "liquidity_usd": 3158597.34,
-        "volume_h1_usd": 4448545.86,
-        "activity_h1": 6024,
+        "price_usd": 0.08933626422770749,
+        "liquidity_usd": 2989429.3876,
+        "volume_h1_usd": 4234110.42104849,
+        "activity_h1": 5820,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.1021,
-        "observed_at": "2026-10-23T22:43:12.479936+00:00",
+        "price_usd": 0.08733,
+        "observed_at": "2026-10-24T00:01:03.099675+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "NFE",
-      "identity_key": "cex:gate:NFE_USDT",
+      "symbol": "NCT",
+      "identity_key": "ethereum:0x9e46a38f5daabe8683e10793b06749eef7d733d1:0xb154256024041e3011c8024874e698b69a2081b3",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
+        "CEX_DEX_PRICE_DIVERGENCE",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:49.808112+00:00",
+      "observed_at": "2026-10-24T00:04:08.121758+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.00069,
-        "liquidity_usd": 457.30359209999995,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 457.30359209999995,
-        "cex_orderbook_spread_pct": 1.4388489208633133
+        "price_usd": 0.01254,
+        "liquidity_usd": 9211.3,
+        "volume_h1_usd": 2166.29,
+        "activity_h1": 43,
+        "cex_depth_1pct_usd": 83.585484,
+        "cex_orderbook_spread_pct": 0.3959728716458163
       },
       "market_observation": {
-        "price_usd": 0.00069,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
-        "source": "GATE_BULK_SPOT_TICKER",
-        "identity_scope": "EXACT_CEX_MARKET",
+        "price_usd": 0.01254,
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
@@ -629,19 +663,19 @@
         "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
         "PRE_BUY_PRICE_CHASE_FROM_ALERT"
       ],
-      "observed_at": "2026-10-23T22:45:58.035475+00:00",
+      "observed_at": "2026-10-24T00:04:09.193217+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.03954,
-        "liquidity_usd": 2899579.51,
-        "volume_h1_usd": 378441.52,
-        "activity_h1": 2354,
-        "cex_depth_1pct_usd": 23891.807757000002,
-        "cex_orderbook_spread_pct": 0.0959014738542206
+        "price_usd": 0.03875,
+        "liquidity_usd": 2877734.7,
+        "volume_h1_usd": 354490.68,
+        "activity_h1": 2185,
+        "cex_depth_1pct_usd": 24333.267386,
+        "cex_orderbook_spread_pct": 0.09550728565713482
       },
       "market_observation": {
-        "price_usd": 0.03951,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.03893,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -654,87 +688,27 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:54.397947+00:00",
+      "observed_at": "2026-10-24T00:04:08.863344+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0018333732560022438,
-        "liquidity_usd": 14426.3333,
-        "volume_h1_usd": 178.1118154629,
-        "activity_h1": 6,
+        "price_usd": 0.001785,
+        "liquidity_usd": 14211.83,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.001833,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "NCT",
-      "identity_key": "ethereum:0x9e46a38f5daabe8683e10793b06749eef7d733d1:0xb154256024041e3011c8024874e698b69a2081b3",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:45:50.108909+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.0130786864857276,
-        "liquidity_usd": 9226.7678,
-        "volume_h1_usd": 1608.0015234842,
-        "activity_h1": 38,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 2.8534562211981576
-      },
-      "market_observation": {
-        "price_usd": 0.01267,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "WALLET",
-      "identity_key": "ethereum:0x88800092ff476844f74dc2fc427974bbee2794ae:0x53bbdf4ea397d17a6f904dc882b3fb78a6875a66",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "CEX_DEX_PRICE_DIVERGENCE",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:45:58.695177+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.02029,
-        "liquidity_usd": 892699.38,
-        "volume_h1_usd": 1309.93,
-        "activity_h1": 9,
-        "cex_depth_1pct_usd": 133.24515839999998,
-        "cex_orderbook_spread_pct": 0.3616999899527912
-      },
-      "market_observation": {
-        "price_usd": 0.02031,
-        "observed_at": "2026-10-23T22:43:19.497050+00:00",
+        "price_usd": 0.001785,
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -752,80 +726,19 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:45:59.361608+00:00",
+      "observed_at": "2026-10-24T00:04:10.683578+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0006671,
-        "liquidity_usd": 120835.5,
-        "volume_h1_usd": 6009.69,
-        "activity_h1": 43,
+        "price_usd": 0.0006474,
+        "liquidity_usd": 119057.06,
+        "volume_h1_usd": 2729.22,
+        "activity_h1": 31,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0006669,
-        "observed_at": "2026-10-23T22:43:22.285907+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "PVP",
-      "identity_key": "bsc:0x009c69b994ae68e90f20a63ce1659ab949547073:0x02d54836f3f55635d5bb4edc521fe7ae1c23155c",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "CEX_DEX_PRICE_DIVERGENCE",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:45:59.735619+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.0004436,
-        "liquidity_usd": 4816.27,
-        "volume_h1_usd": 9.57,
-        "activity_h1": 1,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 6.577777777777783
-      },
-      "market_observation": {
-        "price_usd": 0.0004436,
-        "observed_at": "2026-10-23T22:43:12.479936+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "SUPERFORM",
-      "identity_key": "base:0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b:0x37e1490f7f6f98d263f826e1244c7e7f128632f2",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN"
-      ],
-      "observed_at": "2026-10-23T22:46:01.771872+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.07603,
-        "liquidity_usd": 559984.48,
-        "volume_h1_usd": 28763.52,
-        "activity_h1": 134,
-        "cex_depth_1pct_usd": 34.83895,
-        "cex_orderbook_spread_pct": 1.354995724528058
-      },
-      "market_observation": {
-        "price_usd": 0.07636,
-        "observed_at": "2026-10-23T22:43:16.359497+00:00",
+        "price_usd": 0.0006474,
+        "observed_at": "2026-10-24T00:01:12.900228+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -838,29 +751,58 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "CURRENT_EVIDENCE_TOO_LOW",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:02.518132+00:00",
+      "observed_at": "2026-10-24T00:04:09.952332+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.02759,
-        "liquidity_usd": 12554.7,
-        "volume_h1_usd": 48.58,
-        "activity_h1": 2,
-        "cex_depth_1pct_usd": 403.034867,
-        "cex_orderbook_spread_pct": 0.5195554914129087
+        "price_usd": 0.02874,
+        "liquidity_usd": 12748.22,
+        "volume_h1_usd": 244.54,
+        "activity_h1": 7,
+        "cex_depth_1pct_usd": 419.60312799999997,
+        "cex_orderbook_spread_pct": 0.31551757016798987
       },
       "market_observation": {
-        "price_usd": 0.02759,
-        "observed_at": "2026-10-23T22:43:13.803068+00:00",
+        "price_usd": 0.02874,
+        "observed_at": "2026-10-24T00:01:03.448439+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
+    },
+    {
+      "symbol": "BBT",
+      "identity_key": "bsc:0xb208063997db51de3f0988f8a87b0aff83a6213f:0xc73072c9e247b4d8ebb9eda63013f279250666ba",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CEX_DEX_PRICE_DIVERGENCE",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "HARD_RISK_PRESENT",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": null,
+      "observable": true,
+      "market": {
+        "price_usd": 0.1292158487,
+        "liquidity_usd": 0.2598391874,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 55.6760481,
+        "cex_orderbook_spread_pct": 0.1625869388492454
+      },
+      "market_observation": null
     },
     {
       "symbol": "ERA",
@@ -876,19 +818,47 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:03.237990+00:00",
+      "observed_at": "2026-10-24T00:04:12.132153+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.07828,
-        "liquidity_usd": 9608.95,
-        "volume_h1_usd": 99.13,
-        "activity_h1": 3,
-        "cex_depth_1pct_usd": 20966.700559999997,
-        "cex_orderbook_spread_pct": 0.10218418699705804
+        "price_usd": 0.07742,
+        "liquidity_usd": 9551.38,
+        "volume_h1_usd": 25.24,
+        "activity_h1": 1,
+        "cex_depth_1pct_usd": 9345.8958,
+        "cex_orderbook_spread_pct": 0.12978585334198942
       },
       "market_observation": {
-        "price_usd": 0.07828,
-        "observed_at": "2026-10-23T22:43:12.133090+00:00",
+        "price_usd": 0.07742,
+        "observed_at": "2026-10-24T00:01:02.394940+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "SUPERFORM",
+      "identity_key": "base:0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b:0x37e1490f7f6f98d263f826e1244c7e7f128632f2",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
+      ],
+      "observed_at": "2026-10-24T00:04:12.843888+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.07458,
+        "liquidity_usd": 552997.66,
+        "volume_h1_usd": 22085.9,
+        "activity_h1": 76,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 3.6248180976319713
+      },
+      "market_observation": {
+        "price_usd": 0.07225,
+        "observed_at": "2026-10-24T00:01:07.325909+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -910,119 +880,81 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:21.523156+00:00",
+      "observed_at": "2026-10-24T00:03:05.266981+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.03193665859509915,
-        "liquidity_usd": 6918.8037,
+        "liquidity_usd": 6890.9085,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
-        "cex_depth_1pct_usd": 5127.12357,
-        "cex_orderbook_spread_pct": 0.20973782771535765
+        "cex_depth_1pct_usd": 3099.64563,
+        "cex_orderbook_spread_pct": 0.1212488632919017
       },
       "market_observation": {
         "price_usd": 0.03188,
-        "observed_at": "2026-10-23T22:43:21.523156+00:00",
+        "observed_at": "2026-10-24T00:01:12.182202+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "ARK",
-      "identity_key": "cex:gate:ARK_USDT",
+      "symbol": "WALLET",
+      "identity_key": "ethereum:0x88800092ff476844f74dc2fc427974bbee2794ae:0x53bbdf4ea397d17a6f904dc882b3fb78a6875a66",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:04.431388+00:00",
+      "observed_at": "2026-10-24T00:04:13.556649+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.22325,
-        "liquidity_usd": 5479.90098,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 5479.90098,
-        "cex_orderbook_spread_pct": 0.44320089535535256
+        "price_usd": 0.02026,
+        "liquidity_usd": 891436.29,
+        "volume_h1_usd": 300.2,
+        "activity_h1": 4,
+        "cex_depth_1pct_usd": 130.4885266,
+        "cex_orderbook_spread_pct": 0.6058464179330468
       },
       "market_observation": {
-        "price_usd": 0.2239,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
-        "source": "GATE_BULK_SPOT_TICKER",
-        "identity_scope": "EXACT_CEX_MARKET",
+        "price_usd": 0.02025,
+        "observed_at": "2026-10-24T00:01:10.115266+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "IDOS",
-      "identity_key": "cex:gate:IDOS_USDT",
+      "symbol": "GHX",
+      "identity_key": "ethereum:0x728f30fa2f100742c7949d1961804fa8e0b1387d:0xc6b9c3fa037303d10d50d71ae3cedb0eea7a1c78",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_SPREAD_TOO_WIDE",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
       ],
-      "observed_at": "2026-10-23T22:46:05.501157+00:00",
+      "observed_at": "2026-10-24T00:04:14.259356+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.007143,
-        "liquidity_usd": 0.0,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 2.785042765250585
+        "price_usd": 0.01192,
+        "liquidity_usd": 152879.44,
+        "volume_h1_usd": 30547.65,
+        "activity_h1": 91,
+        "cex_depth_1pct_usd": 213.416918,
+        "cex_orderbook_spread_pct": 0.5048380311316872
       },
       "market_observation": {
-        "price_usd": 0.007143,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
-        "source": "GATE_BULK_SPOT_TICKER",
-        "identity_scope": "EXACT_CEX_MARKET",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "BDG",
-      "identity_key": "cex:gate:BDG_USDT",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_SPREAD_TOO_WIDE",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:46:06.720307+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.00011863,
-        "liquidity_usd": 0.0,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 5.74275821298877
-      },
-      "market_observation": {
-        "price_usd": 0.00011863,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
-        "source": "GATE_BULK_SPOT_TICKER",
-        "identity_scope": "EXACT_CEX_MARKET",
+        "price_usd": 0.01192,
+        "observed_at": "2026-10-24T00:01:12.182202+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
@@ -1033,62 +965,83 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:06.896020+00:00",
+      "observed_at": "2026-10-24T00:04:15.241365+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.114,
-        "liquidity_usd": 14701.87,
-        "volume_h1_usd": 80.31,
-        "activity_h1": 4,
-        "cex_depth_1pct_usd": 10731.684682000001,
-        "cex_orderbook_spread_pct": 0.07056540531004388
+        "price_usd": 0.1152,
+        "liquidity_usd": 14784.44,
+        "volume_h1_usd": 436.01,
+        "activity_h1": 5,
+        "cex_depth_1pct_usd": 13896.028967,
+        "cex_orderbook_spread_pct": 0.07816910583228968
       },
       "market_observation": {
-        "price_usd": 0.114,
-        "observed_at": "2026-10-23T22:43:20.878703+00:00",
+        "price_usd": 0.1152,
+        "observed_at": "2026-10-24T00:01:11.508425+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "UNIT0",
-      "identity_key": "cex:gate:UNIT0_USDT",
+      "symbol": "AVA",
+      "identity_key": "ethereum:0xa6c0c097741d55ecd9a3a7def3a8253fd022ceb9:0x41e570fc65d0f9efe89a6145306e2ba7b8a0fa6b",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_SPREAD_TOO_WIDE",
-        "VOLUME_H1_TOO_LOW"
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET"
       ],
-      "observed_at": "2026-10-23T22:46:08.182535+00:00",
+      "observed_at": "2026-10-24T00:04:15.942693+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.002573,
-        "liquidity_usd": 0.0,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 2.9237455551165485
+        "price_usd": 0.4332529079164025,
+        "liquidity_usd": 223202.6681,
+        "volume_h1_usd": 32035.358127675,
+        "activity_h1": 87,
+        "cex_depth_1pct_usd": 1479.731678,
+        "cex_orderbook_spread_pct": 0.16231884057970514
       },
       "market_observation": {
-        "price_usd": 0.002573,
-        "observed_at": "2026-10-23T22:42:56.387273+00:00",
-        "source": "GATE_BULK_SPOT_TICKER",
-        "identity_scope": "EXACT_CEX_MARKET",
+        "price_usd": 0.4332,
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "FOLD",
+      "identity_key": "ethereum:0xe172e9b6cfbeeb5593bdce3f077356fdb33af904:0x909e4a022a7505d44b19b36fe76ee18567379ee4c9697438acde2e159c006c32",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "BUY_FLOW_NOT_CONFIRMED",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
+      ],
+      "observed_at": "2026-10-24T00:04:16.669585+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.05447,
+        "liquidity_usd": 1295899.67,
+        "volume_h1_usd": 36066.99,
+        "activity_h1": 50,
+        "cex_depth_1pct_usd": 17820.68045,
+        "cex_orderbook_spread_pct": 0.018506523549544043
+      },
+      "market_observation": {
+        "price_usd": 0.05507,
+        "observed_at": "2026-10-24T00:01:08.701066+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
@@ -1106,82 +1059,19 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
       ],
-      "observed_at": "2026-10-23T22:46:08.340129+00:00",
+      "observed_at": "2026-10-24T00:04:17.391341+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.009358,
-        "liquidity_usd": 406714.05,
-        "volume_h1_usd": 50769.06,
-        "activity_h1": 592,
-        "cex_depth_1pct_usd": 313.94280899999995,
-        "cex_orderbook_spread_pct": 0.7738519499032652
+        "price_usd": 0.009263,
+        "liquidity_usd": 404649.93,
+        "volume_h1_usd": 53158.06,
+        "activity_h1": 448,
+        "cex_depth_1pct_usd": 154.200452,
+        "cex_orderbook_spread_pct": 0.5737704918032838
       },
       "market_observation": {
-        "price_usd": 0.009377,
-        "observed_at": "2026-10-23T22:43:22.285907+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "AVA",
-      "identity_key": "ethereum:0xa6c0c097741d55ecd9a3a7def3a8253fd022ceb9:0x41e570fc65d0f9efe89a6145306e2ba7b8a0fa6b",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:46:09.038614+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.4232,
-        "liquidity_usd": 221252.58,
-        "volume_h1_usd": 11979.3,
-        "activity_h1": 57,
-        "cex_depth_1pct_usd": 1735.0007070000001,
-        "cex_orderbook_spread_pct": 0.0710479573712309
-      },
-      "market_observation": {
-        "price_usd": 0.425,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "ELF",
-      "identity_key": "ethereum:0xbf2179859fc6d5bee9bf9158632dc51678a4100e:0xa6be7f7c6c454b364cda446ea39be9e5e4369de8",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CEX_DEX_PRICE_DIVERGENCE",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:46:09.725642+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.06408,
-        "liquidity_usd": 63287.38,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 154.63633999999996,
-        "cex_orderbook_spread_pct": 1.8225150707976947
-      },
-      "market_observation": {
-        "price_usd": 0.06408,
-        "observed_at": "2026-10-23T22:43:19.839772+00:00",
+        "price_usd": 0.009301,
+        "observed_at": "2026-10-24T00:01:12.900228+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1193,61 +1083,25 @@
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:19.839772+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.05801277409199615,
-        "liquidity_usd": 80488.9719,
-        "volume_h1_usd": 514.3117719193,
-        "activity_h1": 11,
-        "cex_depth_1pct_usd": 2742.6188300000003,
-        "cex_orderbook_spread_pct": 0.13793103448276497
-      },
-      "market_observation": {
-        "price_usd": 0.05794,
-        "observed_at": "2026-10-23T22:43:19.839772+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "HNB",
-      "identity_key": "ethereum:0x6e0615a03ed9527a6013fcd5b556e36ef4dab1ff:0xa59a749cbcec9913dd217461254d9e18f0a538cec50142b91a88cbab5171468a",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
-        "CEX_DEX_PRICE_DIVERGENCE",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:10.487608+00:00",
+      "observed_at": "2026-10-24T00:01:10.456647+00:00",
       "observable": true,
       "market": {
-        "price_usd": 8.578e-05,
-        "liquidity_usd": 4.88,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 6.61536384501149
+        "price_usd": 0.05845285240176605,
+        "liquidity_usd": 80801.556,
+        "volume_h1_usd": 12410.8417916431,
+        "activity_h1": 70,
+        "cex_depth_1pct_usd": 2979.32402,
+        "cex_orderbook_spread_pct": 0.0517642998878479
       },
       "market_observation": {
-        "price_usd": 8.578e-05,
-        "observed_at": "2026-10-23T22:43:21.523156+00:00",
+        "price_usd": 0.05839,
+        "observed_at": "2026-10-24T00:01:10.456647+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1260,58 +1114,27 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CEX_DEX_PRICE_DIVERGENCE",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
+      "observed_at": "2026-10-24T00:04:18.297468+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.059040494203024,
-        "liquidity_usd": 4238.5496,
-        "volume_h1_usd": 29.2400334149,
-        "activity_h1": 2,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
+        "price_usd": 0.05907,
+        "liquidity_usd": 4266.56,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 925.8452100000001,
+        "cex_orderbook_spread_pct": 0.40799673602611214
       },
       "market_observation": {
         "price_usd": 0.05907,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "GMRT",
-      "identity_key": "base:0x6967f0974d76d34e140cae27efea32cdf546b58e:0x7545625ee8b088ecb61d0c4046a0f1eeede40a7e",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:00.161689+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.0003983,
-        "liquidity_usd": 21340.53,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.0003983,
-        "observed_at": "2026-10-23T22:43:00.161689+00:00",
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1328,55 +1151,57 @@
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:21.953451+00:00",
+      "observed_at": "2026-10-24T00:04:20.587563+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.03802,
-        "liquidity_usd": 457442.37,
-        "volume_h1_usd": 6147.21,
-        "activity_h1": 36,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
+        "price_usd": 0.03785,
+        "liquidity_usd": 456327.6,
+        "volume_h1_usd": 3000.86,
+        "activity_h1": 24,
+        "cex_depth_1pct_usd": 1568.39699,
+        "cex_orderbook_spread_pct": 0.10610079575596384
       },
       "market_observation": {
-        "price_usd": 0.03802,
-        "observed_at": "2026-10-23T22:43:21.953451+00:00",
+        "price_usd": 0.03785,
+        "observed_at": "2026-10-24T00:01:12.544829+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "LYP",
-      "identity_key": "base:0x4837b18a6d7af6159c8665505b90a2ed393255e0:0x877052e71cf3640b3e0589e92557bf153048359a",
+      "symbol": "GMRT",
+      "identity_key": "base:0x6967f0974d76d34e140cae27efea32cdf546b58e:0x7545625ee8b088ecb61d0c4046a0f1eeede40a7e",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CEX_DEX_PRICE_DIVERGENCE",
+        "CURRENT_EVIDENCE_TOO_LOW",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:00.161689+00:00",
+      "observed_at": "2026-10-24T00:04:19.793311+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.002968,
-        "liquidity_usd": 16697.9,
-        "volume_h1_usd": 477.47,
-        "activity_h1": 9,
+        "price_usd": 0.0003983,
+        "liquidity_usd": 21340.53,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
+        "cex_orderbook_spread_pct": 13.227309649010301
       },
       "market_observation": {
-        "price_usd": 0.002968,
-        "observed_at": "2026-10-23T22:43:00.161689+00:00",
+        "price_usd": 0.0003983,
+        "observed_at": "2026-10-24T00:00:50.819952+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1399,7 +1224,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:10.720567+00:00",
+      "observed_at": "2026-10-24T00:01:01.689233+00:00",
       "observable": true,
       "market": {
         "price_usd": 17.92,
@@ -1411,99 +1236,7 @@
       },
       "market_observation": {
         "price_usd": 17.92,
-        "observed_at": "2026-10-23T22:43:10.720567+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "DMTR",
-      "identity_key": "ethereum:0x51cb253744189f11241becb29bedd3f1b5384fdb:0xcf3f7d858444f78ed16a339fed8c3fd9819ec235",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:21.523156+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.008379631463436095,
-        "liquidity_usd": 121709.157,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.008371,
-        "observed_at": "2026-10-23T22:43:21.523156+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "FOLD",
-      "identity_key": "ethereum:0xe172e9b6cfbeeb5593bdce3f077356fdb33af904:0x909e4a022a7505d44b19b36fe76ee18567379ee4c9697438acde2e159c006c32",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED"
-      ],
-      "observed_at": "2026-10-23T22:43:19.140576+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.0544260154170676,
-        "liquidity_usd": 1294740.1491,
-        "volume_h1_usd": 25694.5836183452,
-        "activity_h1": 44,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.05435,
-        "observed_at": "2026-10-23T22:43:19.140576+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "ANTFUN",
-      "identity_key": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt:54Vp27uLaw4wNLo5n7r4fcC6zLamoQc28xBARjss4EUJ",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING"
-      ],
-      "observed_at": "2026-10-23T22:43:10.376302+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.01677,
-        "liquidity_usd": 17856542.37,
-        "volume_h1_usd": 55028.7,
-        "activity_h1": 349,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.01677,
-        "observed_at": "2026-10-23T22:43:10.376302+00:00",
+        "observed_at": "2026-10-24T00:01:01.689233+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1516,27 +1249,27 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
+      "observed_at": "2026-10-24T00:01:02.065619+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.001007,
-        "liquidity_usd": 7742.39,
-        "volume_h1_usd": 21.77,
-        "activity_h1": 3,
+        "price_usd": 0.0009934,
+        "liquidity_usd": 7668.65,
+        "volume_h1_usd": 17.88,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.001007,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
+        "price_usd": 0.0009934,
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1558,7 +1291,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
         "price_usd": 1.384e-06,
@@ -1570,38 +1303,72 @@
       },
       "market_observation": {
         "price_usd": 1.384e-06,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "WET",
-      "identity_key": "solana:WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U:A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+      "symbol": "DMTR",
+      "identity_key": "ethereum:0x51cb253744189f11241becb29bedd3f1b5384fdb:0xcf3f7d858444f78ed16a339fed8c3fd9819ec235",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:18.074734+00:00",
+      "observed_at": "2026-10-24T00:01:12.182202+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.05741,
-        "liquidity_usd": 758197.94,
-        "volume_h1_usd": 3683.25,
-        "activity_h1": 42,
+        "price_usd": 0.00813137282380804,
+        "liquidity_usd": 119825.5195,
+        "volume_h1_usd": 1035.4496607822,
+        "activity_h1": 6,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.05741,
-        "observed_at": "2026-10-23T22:43:18.074734+00:00",
+        "price_usd": 0.008123,
+        "observed_at": "2026-10-24T00:01:12.182202+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "LYP",
+      "identity_key": "base:0x4837b18a6d7af6159c8665505b90a2ed393255e0:0x877052e71cf3640b3e0589e92557bf153048359a",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:00:50.819952+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.003008,
+        "liquidity_usd": 16809.9,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.003008,
+        "observed_at": "2026-10-24T00:00:50.819952+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1622,11 +1389,11 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
+      "observed_at": "2026-10-24T00:01:01.038146+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.0003551023597077195,
-        "liquidity_usd": 5282.3235,
+        "liquidity_usd": 5259.4221,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
@@ -1634,40 +1401,103 @@
       },
       "market_observation": {
         "price_usd": 0.0003538,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "ACP",
-      "identity_key": "ethereum:0x104e363ac6521e55a24ae724855362acec3febe6:0x21866152ac2125ea3fb78477fb767612e4d34943a8245b8af6fcc6457ee559a1",
+      "symbol": "NACHO",
+      "identity_key": "cex:gate:NACHO_USDT",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
-        "HARD_RISK_PRESENT",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:04:35.340088+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 1.6917e-05,
+        "liquidity_usd": 177.04513036800003,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 177.04513036800003,
+        "cex_orderbook_spread_pct": 1.449487984507494
+      },
+      "market_observation": {
+        "price_usd": 1.6917e-05,
+        "observed_at": "2026-10-24T00:00:47.024654+00:00",
+        "source": "GATE_BULK_SPOT_TICKER",
+        "identity_scope": "EXACT_CEX_MARKET",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "ANTFUN",
+      "identity_key": "solana:CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt:54Vp27uLaw4wNLo5n7r4fcC6zLamoQc28xBARjss4EUJ",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING"
+      ],
+      "observed_at": "2026-10-24T00:01:01.347450+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.01698,
+        "liquidity_usd": 18018633.72,
+        "volume_h1_usd": 38018.99,
+        "activity_h1": 442,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.01698,
+        "observed_at": "2026-10-24T00:01:01.347450+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "WET",
+      "identity_key": "solana:WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U:A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:23.874493+00:00",
+      "observed_at": "2026-10-24T00:01:09.044432+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.006629997569,
-        "liquidity_usd": 0.2399,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.05616,
+        "liquidity_usd": 749919.16,
+        "volume_h1_usd": 2595.76,
+        "activity_h1": 19,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
-      "market_observation": null
+      "market_observation": {
+        "price_usd": 0.05616,
+        "observed_at": "2026-10-24T00:01:09.044432+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
     },
     {
       "symbol": "VT",
@@ -1686,7 +1516,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:23.874493+00:00",
+      "observed_at": "2026-10-24T00:01:14.232384+00:00",
       "observable": true,
       "market": {
         "price_usd": 2.751466235e-05,
@@ -1699,16 +1529,15 @@
       "market_observation": null
     },
     {
-      "symbol": "GMWAGMI",
-      "identity_key": "ethereum:0xbc7250c8c3eca1dfc1728620af835fca489bfdf3:0x98d677887af8a699be38ef6276f4cd84aca29d74",
+      "symbol": "ACP",
+      "identity_key": "ethereum:0x104e363ac6521e55a24ae724855362acec3febe6:0x21866152ac2125ea3fb78477fb767612e4d34943a8245b8af6fcc6457ee559a1",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
-        "INTELLIGENCE_NOT_CURRENT",
-        "INTELLIGENCE_STALE_OR_UNTIMED",
+        "HARD_RISK_PRESENT",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
@@ -1716,11 +1545,11 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:23.874493+00:00",
+      "observed_at": "2026-10-24T00:01:14.232384+00:00",
       "observable": true,
       "market": {
-        "price_usd": 1.44497073474229e-07,
-        "liquidity_usd": 12.2989,
+        "price_usd": 0.006629997569,
+        "liquidity_usd": 0.2399,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
@@ -1737,25 +1566,54 @@
         "BUY_FLOW_NOT_CONFIRMED",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
         "PRE_BUY_PRICE_CHASE_FROM_ALERT",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.06442,
-        "liquidity_usd": 1454845.6,
-        "volume_h1_usd": 42094.05,
-        "activity_h1": 561,
+        "price_usd": 0.06593,
+        "liquidity_usd": 1462329.31,
+        "volume_h1_usd": 73058.42,
+        "activity_h1": 993,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.06442,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.06593,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "DOS",
+      "identity_key": "ethereum:0x951f086a127e280724fd93ccc543f65065afeb5e:0x47a853718cf0d9e1506f01e666780b899b193214",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:03:01.493688+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.235264635810837,
+        "liquidity_usd": 42461.4046,
+        "volume_h1_usd": 3192.3562116556,
+        "activity_h1": 11,
+        "cex_depth_1pct_usd": 17550.652860000002,
+        "cex_orderbook_spread_pct": 0.08673026886382393
+      },
+      "market_observation": {
+        "price_usd": 0.2348,
+        "observed_at": "2026-10-24T00:01:10.799769+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1773,19 +1631,19 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:12.846983+00:00",
+      "observed_at": "2026-10-24T00:01:04.175370+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.04178,
-        "liquidity_usd": 2045602.1,
-        "volume_h1_usd": 324720.96,
-        "activity_h1": 2754,
+        "price_usd": 0.04203,
+        "liquidity_usd": 2051558.46,
+        "volume_h1_usd": 360920.4,
+        "activity_h1": 2919,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.04178,
-        "observed_at": "2026-10-23T22:43:12.846983+00:00",
+        "price_usd": 0.04203,
+        "observed_at": "2026-10-24T00:01:04.175370+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1807,13 +1665,13 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:46:23.335697+00:00",
+      "observed_at": "2026-10-24T00:04:36.310377+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.03948,
-        "liquidity_usd": 250315.6,
-        "volume_h1_usd": 567.24,
-        "activity_h1": 3,
+        "price_usd": 0.03953,
+        "liquidity_usd": 250214.52,
+        "volume_h1_usd": 169.04,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
@@ -1826,58 +1684,23 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN"
-      ],
-      "observed_at": "2026-10-23T22:43:17.678388+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.003294077304710415,
-        "liquidity_usd": 2933713.2973,
-        "volume_h1_usd": 20126.3055215153,
-        "activity_h1": 36,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.00329,
-        "observed_at": "2026-10-23T22:43:17.678388+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "SLRS",
-      "identity_key": "solana:SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr:7XXKU8oGDbeGrkPyK5yHKzdsrMJtB7J2TMugjbrXEhB5",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:12.846983+00:00",
+      "observed_at": "2026-10-24T00:01:06.589806+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0002075,
-        "liquidity_usd": 1825.12,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.003366915595897395,
+        "liquidity_usd": 2971770.3742,
+        "volume_h1_usd": 14138.5722956947,
+        "activity_h1": 28,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0002075,
-        "observed_at": "2026-10-23T22:43:12.846983+00:00",
+        "price_usd": 0.003373,
+        "observed_at": "2026-10-24T00:01:06.589806+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1896,80 +1719,50 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.005392,
-        "liquidity_usd": 248001.29,
-        "volume_h1_usd": 2849.75,
-        "activity_h1": 18,
+        "price_usd": 0.005478,
+        "liquidity_usd": 250332.68,
+        "volume_h1_usd": 7375.66,
+        "activity_h1": 46,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.005392,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.005478,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "ON",
-      "identity_key": "bsc:0x0e4f6209ed984b21edea43ace6e09559ed051d48:0x4620f5c127a6055fbebb1f71327d60ff079c9060",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING"
-      ],
-      "observed_at": "2026-10-23T22:43:16.680986+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.1237,
-        "liquidity_usd": 639636.59,
-        "volume_h1_usd": 21950.09,
-        "activity_h1": 247,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.1237,
-        "observed_at": "2026-10-23T22:43:16.680986+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "DOS",
-      "identity_key": "ethereum:0x951f086a127e280724fd93ccc543f65065afeb5e:0x47a853718cf0d9e1506f01e666780b899b193214",
+      "symbol": "ZEUS",
+      "identity_key": "solana:ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq:Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:20.196855+00:00",
+      "observed_at": "2026-10-24T00:01:05.648879+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.2272367621909635,
-        "liquidity_usd": 42271.5746,
-        "volume_h1_usd": 4744.4938392266,
-        "activity_h1": 14,
-        "cex_depth_1pct_usd": 13593.241559999999,
-        "cex_orderbook_spread_pct": 0.08826125330979952
+        "price_usd": 0.008406,
+        "liquidity_usd": 101766.5,
+        "volume_h1_usd": 4637.16,
+        "activity_h1": 48,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.2278,
-        "observed_at": "2026-10-23T22:43:20.196855+00:00",
+        "price_usd": 0.008406,
+        "observed_at": "2026-10-24T00:01:05.648879+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -1989,11 +1782,11 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:17.678388+00:00",
+      "observed_at": "2026-10-24T00:01:06.589806+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.0008696102591010615,
-        "liquidity_usd": 2175.3701,
+        "liquidity_usd": 2165.9389,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
@@ -2001,36 +1794,36 @@
       },
       "market_observation": {
         "price_usd": 0.0008661,
-        "observed_at": "2026-10-23T22:43:17.678388+00:00",
+        "observed_at": "2026-10-24T00:01:06.589806+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "CARDS",
-      "identity_key": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp:HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+      "symbol": "ON",
+      "identity_key": "bsc:0x0e4f6209ed984b21edea43ace6e09559ed051d48:0x4620f5c127a6055fbebb1f71327d60ff079c9060",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:13.535468+00:00",
+      "observed_at": "2026-10-24T00:01:04.509399+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.3332,
-        "liquidity_usd": 4529371.48,
-        "volume_h1_usd": 518495.85,
-        "activity_h1": 829,
+        "price_usd": 0.1238,
+        "liquidity_usd": 639915.66,
+        "volume_h1_usd": 36742.2,
+        "activity_h1": 353,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.3332,
-        "observed_at": "2026-10-23T22:43:13.535468+00:00",
+        "price_usd": 0.1238,
+        "observed_at": "2026-10-24T00:01:04.509399+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2051,7 +1844,7 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
+      "observed_at": "2026-10-24T00:01:02.065619+00:00",
       "observable": true,
       "market": {
         "price_usd": 4.55e-05,
@@ -2063,7 +1856,68 @@
       },
       "market_observation": {
         "price_usd": 4.55e-05,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "CARDS",
+      "identity_key": "solana:CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp:HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING"
+      ],
+      "observed_at": "2026-10-24T00:01:04.842149+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.3374,
+        "liquidity_usd": 4554188.77,
+        "volume_h1_usd": 178154.16,
+        "activity_h1": 1897,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.3374,
+        "observed_at": "2026-10-24T00:01:04.842149+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "LMTS",
+      "identity_key": "base:0x9eadbe35f3ee3bf3e28180070c429298a1b02f93:0xa5e0da329ee5aa03f09228e534953496334080f5",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:07.325909+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.03431,
+        "liquidity_usd": 306270.32,
+        "volume_h1_usd": 759.51,
+        "activity_h1": 6,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.03431,
+        "observed_at": "2026-10-24T00:01:07.325909+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2081,19 +1935,19 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:21.953451+00:00",
+      "observed_at": "2026-10-24T00:01:12.544829+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.01711,
-        "liquidity_usd": 670299.63,
-        "volume_h1_usd": 95127.67,
-        "activity_h1": 945,
+        "price_usd": 0.01762,
+        "liquidity_usd": 679276.27,
+        "volume_h1_usd": 84811.23,
+        "activity_h1": 958,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.01711,
-        "observed_at": "2026-10-23T22:43:21.953451+00:00",
+        "price_usd": 0.01762,
+        "observed_at": "2026-10-24T00:01:12.544829+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2115,52 +1969,50 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:17.787179+00:00",
+      "observed_at": "2026-10-24T00:01:07.998439+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0002024,
-        "liquidity_usd": 6912.34,
+        "price_usd": 0.0002036,
+        "liquidity_usd": 6939.34,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0002024,
-        "observed_at": "2026-10-23T22:43:17.787179+00:00",
+        "price_usd": 0.0002036,
+        "observed_at": "2026-10-24T00:01:07.998439+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "TEVA",
-      "identity_key": "base:0x00309d634d11541b857f927be91ad2f0bd78894c:0x70fd35ad3e981cb924560737a83ec99bf5796ba2",
+      "symbol": "RBC",
+      "identity_key": "ethereum:0x3330bfb7332ca23cd071631837dc289b09c33333:0xb699853be792ce85a4fab963e772648f6dd28315",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.580961+00:00",
+      "observed_at": "2026-10-24T00:01:01.038146+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.001316,
-        "liquidity_usd": 50488.8,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.002777168492353045,
+        "liquidity_usd": 58873.0806,
+        "volume_h1_usd": 198.4652750591,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.001316,
-        "observed_at": "2026-10-23T22:43:11.580961+00:00",
+        "price_usd": 0.002784,
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2173,25 +2025,26 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:22.285907+00:00",
+      "observed_at": "2026-10-24T00:01:12.900228+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.0007196,
-        "liquidity_usd": 71302.63,
-        "volume_h1_usd": 1124.15,
-        "activity_h1": 39,
+        "liquidity_usd": 71302.58,
+        "volume_h1_usd": 0.02,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
         "price_usd": 0.0007196,
-        "observed_at": "2026-10-23T22:43:22.285907+00:00",
+        "observed_at": "2026-10-24T00:01:12.900228+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2203,55 +2056,150 @@
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
+        "BUY_FLOW_NOT_CONFIRMED",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 1.77,
-        "liquidity_usd": 363833.6,
-        "volume_h1_usd": 52267.61,
-        "activity_h1": 443,
+        "price_usd": 1.75,
+        "liquidity_usd": 362592.94,
+        "volume_h1_usd": 39847.9,
+        "activity_h1": 228,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 1.77,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 1.75,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "LMTS",
-      "identity_key": "base:0x9eadbe35f3ee3bf3e28180070c429298a1b02f93:0xa5e0da329ee5aa03f09228e534953496334080f5",
+      "symbol": "LEGION",
+      "identity_key": "ethereum:0xb2a25f7d864636e44bc1bf7a316897652bf07463:0x7b2b2ee22a582648ea53ea0b6a11e07b48113cdb18f51b4582d480ef86f57249",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
+        "INTELLIGENCE_NOT_CURRENT",
+        "INTELLIGENCE_STALE_OR_UNTIMED",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:16.359497+00:00",
+      "observed_at": "2026-10-24T00:01:18.391229+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0346,
-        "liquidity_usd": 308295.54,
-        "volume_h1_usd": 818.01,
-        "activity_h1": 2,
+        "price_usd": 5.555708625e-05,
+        "liquidity_usd": 54.5756,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": null
+    },
+    {
+      "symbol": "DUSK",
+      "identity_key": "ethereum:0x940a2db1b7008b6c776d4faaca729d6d4a4aa551:0xf4bce6d3c42479225205d901a3f67956df3f4f7f45ccd9f7ce6bc16c3a0ee09f",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:06.589806+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.1171007197252865,
+        "liquidity_usd": 360987.8801,
+        "volume_h1_usd": 7051.8162397943,
+        "activity_h1": 41,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0346,
-        "observed_at": "2026-10-23T22:43:16.359497+00:00",
+        "price_usd": 0.1173,
+        "observed_at": "2026-10-24T00:01:06.589806+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "SLRS",
+      "identity_key": "solana:SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr:7XXKU8oGDbeGrkPyK5yHKzdsrMJtB7J2TMugjbrXEhB5",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:04.175370+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.0002096,
+        "liquidity_usd": 1834.4,
+        "volume_h1_usd": 88.93,
+        "activity_h1": 15,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.0002096,
+        "observed_at": "2026-10-24T00:01:04.175370+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "HNB",
+      "identity_key": "ethereum:0x6e0615a03ed9527a6013fcd5b556e36ef4dab1ff:0xa59a749cbcec9913dd217461254d9e18f0a538cec50142b91a88cbab5171468a",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:12.182202+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 8.578e-05,
+        "liquidity_usd": 4.88,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 8.578e-05,
+        "observed_at": "2026-10-24T00:01:12.182202+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2269,51 +2217,52 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.01104,
-        "liquidity_usd": 516128.48,
-        "volume_h1_usd": 46029.67,
-        "activity_h1": 504,
+        "price_usd": 0.01098,
+        "liquidity_usd": 514342.35,
+        "volume_h1_usd": 34374.85,
+        "activity_h1": 343,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.01104,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.01098,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "RBC",
-      "identity_key": "ethereum:0x3330bfb7332ca23cd071631837dc289b09c33333:0xb699853be792ce85a4fab963e772648f6dd28315",
+      "symbol": "LVVA",
+      "identity_key": "ethereum:0x6243558a24cc6116abe751f27e6d7ede50abfc76:0x4265bf9a05428ce43d01ff7f555345bcadf669592102602fe9455cd5cbd481b9",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
+      "observed_at": "2026-10-24T00:01:01.038146+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.002779427190125605,
-        "liquidity_usd": 58705.0657,
+        "price_usd": 0.000483760396427461,
+        "liquidity_usd": 3243.6639,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.002777,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
+        "price_usd": 0.0004846,
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2326,26 +2275,152 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
         "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:13.803068+00:00",
+      "observed_at": "2026-10-24T00:01:03.448439+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.00223310668150448,
-        "liquidity_usd": 6234.7362,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.00222127098640833,
+        "liquidity_usd": 6250.5608,
+        "volume_h1_usd": 20.0038930189,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.002231,
-        "observed_at": "2026-10-23T22:43:13.803068+00:00",
+        "price_usd": 0.002224,
+        "observed_at": "2026-10-24T00:01:03.448439+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "KERNEL",
+      "identity_key": "ethereum:0x3f80b1c54ae920be41a77f8b902259d48cf24ccf:0x1542cd77e7a605cbf140823a9f21fa7ddde44078",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:02.394940+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.0512213653391345,
+        "liquidity_usd": 12662.811,
+        "volume_h1_usd": 186.5934429749,
+        "activity_h1": 6,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.05133,
+        "observed_at": "2026-10-24T00:01:02.394940+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "ELSA",
+      "identity_key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca:0x83f3aca29bc79b048b99c56013475570acc97ccf",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "BUY_FLOW_NOT_CONFIRMED",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
+        "PRICE_SOURCE_REDUNDANCY_MISSING"
+      ],
+      "observed_at": "2026-10-24T00:01:02.815712+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.07289,
+        "liquidity_usd": 491182.34,
+        "volume_h1_usd": 89056.51,
+        "activity_h1": 885,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.07289,
+        "observed_at": "2026-10-24T00:01:02.815712+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "MMPRO",
+      "identity_key": "bsc:0x6067490d05f3cf2fdffc0e353b1f5fd6e5ccdf70:0xde5b01167d96184b6bbe2c669a61c29686086241",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "CURRENT_EVIDENCE_TOO_LOW",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
+        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:03.099675+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.000587,
+        "liquidity_usd": 2903.03,
+        "volume_h1_usd": 1.39,
+        "activity_h1": 1,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.000587,
+        "observed_at": "2026-10-24T00:01:03.099675+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "XNY",
+      "identity_key": "bsc:0xe3225e11cab122f1a126a28997788e5230838ab9:0x7ccc3010e52fbca54467ff68eec4be78420571c5",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "BUY_FLOW_NOT_CONFIRMED",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "HARD_RISK_PRESENT",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:02:46.432128+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.00568272029605612,
+        "liquidity_usd": 579775.9205,
+        "volume_h1_usd": 1441.7189835888,
+        "activity_h1": 54,
+        "cex_depth_1pct_usd": 1797.3290123000002,
+        "cex_orderbook_spread_pct": 0.12364214430804665
+      },
+      "market_observation": {
+        "price_usd": 0.005688,
+        "observed_at": "2026-10-24T00:01:04.509399+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2365,59 +2440,58 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
+      "observed_at": "2026-10-24T00:01:01.038146+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.002050862403170025,
-        "liquidity_usd": 6729.1504,
-        "volume_h1_usd": 1.6805112145,
-        "activity_h1": 1,
+        "liquidity_usd": 6730.4774,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
         "price_usd": 0.002056,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
+        "observed_at": "2026-10-24T00:01:01.038146+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "KERNEL",
-      "identity_key": "ethereum:0x3f80b1c54ae920be41a77f8b902259d48cf24ccf:0x1542cd77e7a605cbf140823a9f21fa7ddde44078",
+      "symbol": "SIREN",
+      "identity_key": "bsc:0x997a58129890bbda032231a52ed1ddc845fc18e1:0xb2af49dbf526054faf19602860a5e298a79f3d05",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:12.133090+00:00",
+      "observed_at": "2026-10-24T00:01:07.998439+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.05093723495599805,
-        "liquidity_usd": 12208.7104,
-        "volume_h1_usd": 5.0614469912,
-        "activity_h1": 1,
+        "price_usd": 0.02167,
+        "liquidity_usd": 2183798.38,
+        "volume_h1_usd": 6471.75,
+        "activity_h1": 36,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.05126,
-        "observed_at": "2026-10-23T22:43:12.133090+00:00",
+        "price_usd": 0.02167,
+        "observed_at": "2026-10-24T00:01:07.998439+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "HOOK",
-      "identity_key": "bsc:0xa260e12d2b924cb899ae80bb58123ac3fee1e2f0:0x9e9b768174ef24233bf8ac2f4131f10ff5e72dee",
+      "symbol": "PVP",
+      "identity_key": "bsc:0x009c69b994ae68e90f20a63ce1659ab949547073:0x02d54836f3f55635d5bb4edc521fe7ae1c23155c",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
@@ -2428,22 +2502,51 @@
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:21.265682+00:00",
+      "observed_at": "2026-10-24T00:01:03.099675+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.002761,
-        "liquidity_usd": 7741.45,
+        "price_usd": 0.0004436,
+        "liquidity_usd": 4816.27,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.002761,
-        "observed_at": "2026-10-23T22:43:21.265682+00:00",
+        "price_usd": 0.0004436,
+        "observed_at": "2026-10-24T00:01:03.099675+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "PEAQ",
+      "identity_key": "solana:PEAQjk7SRS6rXHVFFmpRr7zrC4g5ZuEebpwTxvaLr3b:hwACqK4NXf5iN47KHS2575JeY2LvqGnbHeQvjSeyfj2",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:04.175370+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.03741,
+        "liquidity_usd": 224539.81,
+        "volume_h1_usd": 12600.48,
+        "activity_h1": 90,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.03741,
+        "observed_at": "2026-10-24T00:01:04.175370+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2467,7 +2570,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:27.823930+00:00",
+      "observed_at": "2026-10-24T00:01:18.391229+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.003415542268,
@@ -2478,225 +2581,6 @@
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": null
-    },
-    {
-      "symbol": "PEPE",
-      "identity_key": "ethereum:0x6982508145454ce325ddbe47a25d4ec3d2311933:0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN"
-      ],
-      "observed_at": "2026-10-23T22:43:12.133090+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 4.605589002349285e-06,
-        "liquidity_usd": 30897789.0142,
-        "volume_h1_usd": 28202.4721131208,
-        "activity_h1": 34,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 4.6e-06,
-        "observed_at": "2026-10-23T22:43:12.133090+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "XNY",
-      "identity_key": "bsc:0xe3225e11cab122f1a126a28997788e5230838ab9:0x7ccc3010e52fbca54467ff68eec4be78420571c5",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "HARD_RISK_PRESENT",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:44:47.868239+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.005661,
-        "liquidity_usd": 578549.29,
-        "volume_h1_usd": 569.86,
-        "activity_h1": 44,
-        "cex_depth_1pct_usd": 3777.4336186,
-        "cex_orderbook_spread_pct": 0.1234894592925829
-      },
-      "market_observation": {
-        "price_usd": 0.005661,
-        "observed_at": "2026-10-23T22:43:16.680986+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "ELSA",
-      "identity_key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca:0x83f3aca29bc79b048b99c56013475570acc97ccf",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "EXTENDED_MOVE_WAIT_FOR_RESET",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
-        "PRICE_SOURCE_REDUNDANCY_MISSING"
-      ],
-      "observed_at": "2026-10-23T22:43:11.580961+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.07245,
-        "liquidity_usd": 488902.29,
-        "volume_h1_usd": 69034.22,
-        "activity_h1": 753,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.07245,
-        "observed_at": "2026-10-23T22:43:11.580961+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "FONE",
-      "identity_key": "solana:CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump:3dcwhqJp6JBTJPq8ga335HWgSQVS7uQmdmeX7iGjMNpj",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.002558,
-        "liquidity_usd": 380932.94,
-        "volume_h1_usd": 5269.82,
-        "activity_h1": 66,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.002558,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "MY",
-      "identity_key": "bsc:0xf0ebb572643336834d516c485ad31d3299999999:0x0bc03c0d7e62a0bd2477c317bdf30fe9463cb388",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:21.265682+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.01974,
-        "liquidity_usd": 9437.84,
-        "volume_h1_usd": 19.9,
-        "activity_h1": 1,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.01974,
-        "observed_at": "2026-10-23T22:43:21.265682+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "CPOOL",
-      "identity_key": "ethereum:0x66761fa41377003622aee3c7675fc7b5c1c2fac5:0x81aee07f99be78d88881fa6d98feff7555113635",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:10.720567+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.029518059111703597,
-        "liquidity_usd": 167295.2016,
-        "volume_h1_usd": 901.0404715018,
-        "activity_h1": 6,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.02957,
-        "observed_at": "2026-10-23T22:43:10.720567+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "LVVA",
-      "identity_key": "ethereum:0x6243558a24cc6116abe751f27e6d7ede50abfc76:0x4265bf9a05428ce43d01ff7f555345bcadf669592102602fe9455cd5cbd481b9",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.000483760396427461,
-        "liquidity_usd": 3256.7946,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.0004846,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
     },
     {
       "symbol": "STBL",
@@ -2710,91 +2594,58 @@
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING"
       ],
-      "observed_at": "2026-10-23T22:43:16.680986+00:00",
+      "observed_at": "2026-10-24T00:01:04.509399+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.02656,
-        "liquidity_usd": 1776856.9,
-        "volume_h1_usd": 65868.91,
-        "activity_h1": 371,
+        "price_usd": 0.02674,
+        "liquidity_usd": 1783171.48,
+        "volume_h1_usd": 62424.22,
+        "activity_h1": 368,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.02656,
-        "observed_at": "2026-10-23T22:43:16.680986+00:00",
+        "price_usd": 0.02674,
+        "observed_at": "2026-10-24T00:01:04.509399+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "READY",
-      "identity_key": "solana:HKJHsYJHMVK5VRyHHk5GhvzY9tBAAtPvDkZfDH6RLDTd:AiP94aqcnsxPfHTQLerdwNACedhmEUxMaaSxevS2Drxm",
-      "state": "WATCH",
-      "pre_buy": false,
-      "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
-        "CURRENT_EVIDENCE_TOO_LOW",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
-        "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
-        "VOLUME_H1_TOO_LOW"
-      ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
-      "observable": true,
-      "market": {
-        "price_usd": 0.002321,
-        "liquidity_usd": 155531.01,
-        "volume_h1_usd": 96.25,
-        "activity_h1": 11,
-        "cex_depth_1pct_usd": 0.0,
-        "cex_orderbook_spread_pct": 999.0
-      },
-      "market_observation": {
-        "price_usd": 0.002321,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
-        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
-        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
-        "price_source_count": 1
-      }
-    },
-    {
-      "symbol": "ATH",
-      "identity_key": "ethereum:0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b:0xd31d41dffa3589bb0c0183e46a1eed983a5e5978",
+      "symbol": "DSYNC",
+      "identity_key": "ethereum:0xf94e7d0710709388bce3161c32b4eea56d3f91cc:0x1ffec7119e315b15852557f654ae0052f76e6ae1",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
-        "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:09.975158+00:00",
+      "observed_at": "2026-10-24T00:01:03.448439+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.006074937601386644,
-        "liquidity_usd": 413298.5421,
-        "volume_h1_usd": 3030.2276757572,
-        "activity_h1": 27,
+        "price_usd": 0.007239869409606485,
+        "liquidity_usd": 1027081.6098,
+        "volume_h1_usd": 1258.133155426,
+        "activity_h1": 3,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.006083,
-        "observed_at": "2026-10-23T22:43:09.975158+00:00",
+        "price_usd": 0.007253,
+        "observed_at": "2026-10-24T00:01:03.448439+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "MMPRO",
-      "identity_key": "bsc:0x6067490d05f3cf2fdffc0e353b1f5fd6e5ccdf70:0xde5b01167d96184b6bbe2c669a61c29686086241",
+      "symbol": "DN",
+      "identity_key": "bsc:0x9b6a1d4fa5d90e5f2d34130053978d14cd301d58:0xa36e5b863c5570d5d2d43fa48eaba6464ed731fb",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
@@ -2805,21 +2656,49 @@
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:12.479936+00:00",
+      "observed_at": "2026-10-24T00:01:03.099675+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0005897,
-        "liquidity_usd": 2909.58,
+        "price_usd": 0.01002,
+        "liquidity_usd": 4561.98,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0005897,
-        "observed_at": "2026-10-23T22:43:12.479936+00:00",
+        "price_usd": 0.01002,
+        "observed_at": "2026-10-24T00:01:03.099675+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "PEPE",
+      "identity_key": "ethereum:0x6982508145454ce325ddbe47a25d4ec3d2311933:0xa43fe16908251ee70ef74718545e4fe6c5ccec9f",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "SHORT_TERM_PRICE_RECLAIM_NOT_CONFIRMED"
+      ],
+      "observed_at": "2026-10-24T00:01:02.394940+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 4.567600296713835e-06,
+        "liquidity_usd": 30832723.515,
+        "volume_h1_usd": 147971.404150543,
+        "activity_h1": 60,
+        "cex_depth_1pct_usd": 234295.18515619502,
+        "cex_orderbook_spread_pct": 0.02193704069320284
+      },
+      "market_observation": {
+        "price_usd": 4.555e-06,
+        "observed_at": "2026-10-24T00:01:02.394940+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2840,7 +2719,7 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:20.532011+00:00",
+      "observed_at": "2026-10-24T00:01:11.159331+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.00153,
@@ -2852,102 +2731,132 @@
       },
       "market_observation": {
         "price_usd": 0.00153,
-        "observed_at": "2026-10-23T22:43:20.532011+00:00",
+        "observed_at": "2026-10-24T00:01:11.159331+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "SIREN",
-      "identity_key": "bsc:0x997a58129890bbda032231a52ed1ddc845fc18e1:0xb2af49dbf526054faf19602860a5e298a79f3d05",
+      "symbol": "CHO",
+      "identity_key": "ethereum:0xbba39fd2935d5769116ce38d46a71bde9cf03099:0x2cb162433e0cabac4825e6d198a125829156cc92",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
         "CURRENT_EVIDENCE_TOO_LOW",
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "LIQUIDITY_BELOW_FINAL_BUY_FLOOR",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
-        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:17.787179+00:00",
+      "observed_at": "2026-10-24T00:01:02.394940+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.02146,
-        "liquidity_usd": 2180366.11,
-        "volume_h1_usd": 209.23,
-        "activity_h1": 1,
+        "price_usd": 0.020065949299999997,
+        "liquidity_usd": 4920.6329078291,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.02146,
-        "observed_at": "2026-10-23T22:43:17.787179+00:00",
+        "price_usd": 0.02005,
+        "observed_at": "2026-10-24T00:01:02.394940+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "ZEUS",
-      "identity_key": "solana:ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq:Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
+      "symbol": "GRASS",
+      "identity_key": "solana:Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs:GTJ2S27UL7yZ3TdTwpKjfNcxeEZRkRPHjpj5Fubwb8Mk",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "ACTIVITY_H1_TOO_LOW",
         "EXTENDED_MOVE_WAIT_FOR_RESET",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:14.241149+00:00",
+      "observed_at": "2026-10-24T00:01:04.175370+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.007866,
-        "liquidity_usd": 98424.52,
-        "volume_h1_usd": 874.1,
-        "activity_h1": 19,
+        "price_usd": 0.651,
+        "liquidity_usd": 498597.33,
+        "volume_h1_usd": 386.41,
+        "activity_h1": 164,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.007866,
-        "observed_at": "2026-10-23T22:43:14.241149+00:00",
+        "price_usd": 0.651,
+        "observed_at": "2026-10-24T00:01:04.175370+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
       }
     },
     {
-      "symbol": "ZCAT",
-      "identity_key": "solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR:BTccxxTFi7a9xJTE1exKn38Jgie35s6gNeRxd8DM61Rc",
+      "symbol": "ZEREBRO",
+      "identity_key": "solana:8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn:3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "EXTENDED_MOVE_WAIT_FOR_RESET",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRE_BUY_EPISODE_EXPIRED_REQUIRES_RESET",
+        "PRICE_SOURCE_REDUNDANCY_MISSING"
+      ],
+      "observed_at": "2026-10-24T00:01:05.648879+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.02996,
+        "liquidity_usd": 3042781.2,
+        "volume_h1_usd": 17318.89,
+        "activity_h1": 235,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.02996,
+        "observed_at": "2026-10-24T00:01:05.648879+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "OGPU",
+      "identity_key": "ethereum:0x067def80d66fb69c276e53b641f37ff7525162f6:0x3415e25b637686bbece1d0f798934772101486f6",
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
         "BUY_FLOW_NOT_CONFIRMED",
-        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "CURRENT_EVIDENCE_TOO_LOW",
         "MARKET_MICROSTRUCTURE_NOT_POSITIVE",
         "NEED_SECOND_VERIFIED_SCAN",
-        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
+      "observed_at": "2026-10-24T00:01:05.206779+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.04643,
-        "liquidity_usd": 1116087.7,
-        "volume_h1_usd": 2422.33,
-        "activity_h1": 23,
+        "price_usd": 0.031188635005693348,
+        "liquidity_usd": 161940.9976,
+        "volume_h1_usd": 0.0,
+        "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.04643,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
+        "price_usd": 0.03138,
+        "observed_at": "2026-10-24T00:01:05.206779+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -2959,26 +2868,26 @@
       "state": "WATCH",
       "pre_buy": false,
       "reasons": [
-        "BUY_FLOW_NOT_CONFIRMED",
+        "ACTIVITY_H1_TOO_LOW",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.004552,
-        "liquidity_usd": 123353.31,
-        "volume_h1_usd": 3222.3,
-        "activity_h1": 50,
+        "price_usd": 0.004567,
+        "liquidity_usd": 123548.74,
+        "volume_h1_usd": 449.44,
+        "activity_h1": 18,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.004552,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.004567,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3000,19 +2909,19 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.0001704,
-        "liquidity_usd": 6255.3,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.0001693,
+        "liquidity_usd": 6202.01,
+        "volume_h1_usd": 695.83,
+        "activity_h1": 4,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.0001704,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.0001693,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3025,26 +2934,25 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.005153,
-        "liquidity_usd": 124478.92,
-        "volume_h1_usd": 693.44,
-        "activity_h1": 21,
+        "price_usd": 0.005126,
+        "liquidity_usd": 124148.76,
+        "volume_h1_usd": 60.24,
+        "activity_h1": 3,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.005153,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.005126,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3068,11 +2976,11 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:27.823930+00:00",
+      "observed_at": "2026-10-24T00:01:18.391229+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.00037848915374683,
-        "liquidity_usd": 4029.1992,
+        "liquidity_usd": 4011.7307,
         "volume_h1_usd": 0.0,
         "activity_h1": 0,
         "cex_depth_1pct_usd": 0.0,
@@ -3094,19 +3002,81 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.004032,
-        "liquidity_usd": 78172.35,
-        "volume_h1_usd": 0.0,
-        "activity_h1": 0,
+        "price_usd": 0.00403,
+        "liquidity_usd": 78156.26,
+        "volume_h1_usd": 8.04,
+        "activity_h1": 1,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.004032,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.00403,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "FONE",
+      "identity_key": "solana:CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump:3dcwhqJp6JBTJPq8ga335HWgSQVS7uQmdmeX7iGjMNpj",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "BUY_FLOW_NOT_CONFIRMED",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:02.065619+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.002448,
+        "liquidity_usd": 372611.73,
+        "volume_h1_usd": 14787.32,
+        "activity_h1": 77,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.002448,
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
+        "source": "DEXSCREENER_EXACT_PAIR_BATCH",
+        "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
+        "price_source_count": 1
+      }
+    },
+    {
+      "symbol": "ZCAT",
+      "identity_key": "solana:HcRLc9VDgjLeK154xDawfb1dmVJ98DoSqcwTHGqiDeJR:BTccxxTFi7a9xJTE1exKn38Jgie35s6gNeRxd8DM61Rc",
+      "state": "WATCH",
+      "pre_buy": false,
+      "reasons": [
+        "ACTIVITY_H1_TOO_LOW",
+        "BUY_FLOW_NOT_CONFIRMED",
+        "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
+        "NEED_SECOND_VERIFIED_SCAN",
+        "PRICE_SOURCE_REDUNDANCY_MISSING",
+        "VOLUME_H1_TOO_LOW"
+      ],
+      "observed_at": "2026-10-24T00:01:02.065619+00:00",
+      "observable": true,
+      "market": {
+        "price_usd": 0.04597,
+        "liquidity_usd": 1111140.7,
+        "volume_h1_usd": 14786.27,
+        "activity_h1": 20,
+        "cex_depth_1pct_usd": 0.0,
+        "cex_orderbook_spread_pct": 999.0
+      },
+      "market_observation": {
+        "price_usd": 0.04597,
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3119,26 +3089,25 @@
       "pre_buy": false,
       "reasons": [
         "ACTIVITY_H1_TOO_LOW",
-        "BUY_FLOW_NOT_CONFIRMED",
         "FINAL_BUY_INTELLIGENCE_CONFLUENCE_NOT_MET",
         "NEED_SECOND_VERIFIED_SCAN",
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.815018+00:00",
+      "observed_at": "2026-10-24T00:01:00.739360+00:00",
       "observable": true,
       "market": {
-        "price_usd": 0.07308,
-        "liquidity_usd": 1403292.03,
-        "volume_h1_usd": 411.7,
+        "price_usd": 0.06936,
+        "liquidity_usd": 1366166.94,
+        "volume_h1_usd": 1348.14,
         "activity_h1": 6,
         "cex_depth_1pct_usd": 0.0,
         "cex_orderbook_spread_pct": 999.0
       },
       "market_observation": {
-        "price_usd": 0.07308,
-        "observed_at": "2026-10-23T22:43:11.815018+00:00",
+        "price_usd": 0.06936,
+        "observed_at": "2026-10-24T00:01:00.739360+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3160,7 +3129,7 @@
         "REBOUND_FROM_WATCH_LOW_NOT_CONFIRMED",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:11.079494+00:00",
+      "observed_at": "2026-10-24T00:01:02.065619+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.01415,
@@ -3172,7 +3141,7 @@
       },
       "market_observation": {
         "price_usd": 0.01415,
-        "observed_at": "2026-10-23T22:43:11.079494+00:00",
+        "observed_at": "2026-10-24T00:01:02.065619+00:00",
         "source": "DEXSCREENER_EXACT_PAIR_BATCH",
         "identity_scope": "EXACT_CHAIN_CONTRACT_PAIR",
         "price_source_count": 1
@@ -3195,7 +3164,7 @@
         "PRICE_SOURCE_REDUNDANCY_MISSING",
         "VOLUME_H1_TOO_LOW"
       ],
-      "observed_at": "2026-10-23T22:43:27.823930+00:00",
+      "observed_at": "2026-10-24T00:01:18.391229+00:00",
       "observable": true,
       "market": {
         "price_usd": 0.00773306093556432,
@@ -3211,271 +3180,271 @@
   "discovery_movers": [
     {
       "symbol": "IRYS",
-      "price_usd": 0.08328,
-      "change_24h_pct": 283.07,
-      "volume_24h_usd": 65246697.0,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.07593,
+      "change_24h_pct": 267.87,
+      "volume_24h_usd": 65896106.65,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/IRYS_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "FOREST",
-      "price_usd": 0.05211,
-      "change_24h_pct": 100.19,
-      "volume_24h_usd": 86231.56,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.05205,
+      "change_24h_pct": 99.96,
+      "volume_24h_usd": 89938.14,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/FOREST_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "AQA",
-      "price_usd": 0.0001699,
-      "change_24h_pct": 81.3,
-      "volume_24h_usd": 2985.26,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.000176,
+      "change_24h_pct": 91.61,
+      "volume_24h_usd": 2973.82,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/AQA_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "BIRB",
-      "price_usd": 0.08181,
-      "change_24h_pct": 52.17,
-      "volume_24h_usd": 3100473.26,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/BIRB_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "NFE",
-      "price_usd": 0.00069,
-      "change_24h_pct": 46.24,
-      "volume_24h_usd": 2573.33,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/NFE_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "WALLET",
-      "price_usd": 0.01987,
-      "change_24h_pct": 44.27,
-      "volume_24h_usd": 30967.33,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/WALLET_USDT",
+      "symbol": "MEZO",
+      "price_usd": 0.004288,
+      "change_24h_pct": 55.24,
+      "volume_24h_usd": 137854.06,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/MEZO_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "NCT",
-      "price_usd": 0.012778,
-      "change_24h_pct": 43.75,
-      "volume_24h_usd": 158853.4,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.012791,
+      "change_24h_pct": 45.58,
+      "volume_24h_usd": 270795.59,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/NCT_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "PVP",
-      "price_usd": 0.02937,
-      "change_24h_pct": 34.23,
-      "volume_24h_usd": 3330.6,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/PVP_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "SUPERFORM",
-      "price_usd": 0.07644,
-      "change_24h_pct": 31.88,
-      "volume_24h_usd": 175690.97,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/SUPERFORM_USDT",
+      "symbol": "BIRB",
+      "price_usd": 0.07629,
+      "change_24h_pct": 43.02,
+      "volume_24h_usd": 3268458.04,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/BIRB_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "BFC",
-      "price_usd": 0.027768,
-      "change_24h_pct": 27.98,
-      "volume_24h_usd": 202543.21,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.028887,
+      "change_24h_pct": 33.13,
+      "volume_24h_usd": 205214.84,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/BFC_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "ARK",
-      "price_usd": 0.2242,
-      "change_24h_pct": 27.9,
-      "volume_24h_usd": 245639.53,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/ARK_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "IDOS",
-      "price_usd": 0.007143,
-      "change_24h_pct": 27.03,
-      "volume_24h_usd": 12407.24,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/IDOS_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "AKE",
-      "price_usd": 0.039613,
-      "change_24h_pct": 26.77,
-      "volume_24h_usd": 14559706.44,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/AKE_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "BDG",
-      "price_usd": 0.00011863,
-      "change_24h_pct": 25.77,
-      "volume_24h_usd": 3634.8,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/BDG_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "UNIT0",
-      "price_usd": 0.002573,
-      "change_24h_pct": 24.84,
-      "volume_24h_usd": 1839.48,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/UNIT0_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "BIFIF",
-      "price_usd": 0.0006711,
-      "change_24h_pct": 22.5,
-      "volume_24h_usd": 2044.04,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/BIFIF_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "ERA",
-      "price_usd": 0.07822,
-      "change_24h_pct": 21.95,
-      "volume_24h_usd": 476668.42,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/ERA_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "QTC",
-      "price_usd": 0.000929,
-      "change_24h_pct": 21.82,
-      "volume_24h_usd": 568.21,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/QTC_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "TOLLY",
-      "price_usd": 0.001897,
-      "change_24h_pct": 21.6,
-      "volume_24h_usd": 8293.05,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/TOLLY_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "IN",
-      "price_usd": 0.03272,
-      "change_24h_pct": 21.54,
-      "volume_24h_usd": 334203.14,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/IN_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "ELF",
-      "price_usd": 0.10601,
-      "change_24h_pct": 21.52,
-      "volume_24h_usd": 3301.29,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/ELF_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "MAN",
-      "price_usd": 0.0009011,
-      "change_24h_pct": 21.11,
-      "volume_24h_usd": 31428.9,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/MAN_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
-      "symbol": "HNB",
-      "price_usd": 4.087e-05,
-      "change_24h_pct": 20.8,
-      "volume_24h_usd": 877.37,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/HNB_USDT",
-      "state": "RESEARCH_ONLY_NOT_BUY"
-    },
-    {
       "symbol": "BBT",
-      "price_usd": 0.0533,
-      "change_24h_pct": 20.58,
-      "volume_24h_usd": 39433.48,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.0552,
+      "change_24h_pct": 24.91,
+      "volume_24h_usd": 38319.9,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/BBT_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
+      "symbol": "BIFIF",
+      "price_usd": 0.0006583,
+      "change_24h_pct": 23.92,
+      "volume_24h_usd": 1963.42,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/BIFIF_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "AKE",
+      "price_usd": 0.038973,
+      "change_24h_pct": 23.88,
+      "volume_24h_usd": 14868675.62,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/AKE_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "SUPERFORM",
+      "price_usd": 0.07176,
+      "change_24h_pct": 23.8,
+      "volume_24h_usd": 178045.12,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/SUPERFORM_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "ARK",
+      "price_usd": 0.22015,
+      "change_24h_pct": 22.98,
+      "volume_24h_usd": 257262.92,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/ARK_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "BDG",
+      "price_usd": 0.00011948,
+      "change_24h_pct": 21.49,
+      "volume_24h_usd": 3603.12,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/BDG_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "WALLET",
+      "price_usd": 0.019867,
+      "change_24h_pct": 20.58,
+      "volume_24h_usd": 28975.67,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/WALLET_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "IN",
+      "price_usd": 0.03255,
+      "change_24h_pct": 20.46,
+      "volume_24h_usd": 559482.36,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/IN_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "GHX",
+      "price_usd": 0.011954,
+      "change_24h_pct": 20.2,
+      "volume_24h_usd": 26329.0,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/GHX_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "IDOS",
+      "price_usd": 0.006817,
+      "change_24h_pct": 20.2,
+      "volume_24h_usd": 12527.19,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/IDOS_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "FOLD",
+      "price_usd": 0.05515,
+      "change_24h_pct": 19.44,
+      "volume_24h_usd": 1132071.3,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/FOLD_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "AVA",
+      "price_usd": 0.4303,
+      "change_24h_pct": 19.19,
+      "volume_24h_usd": 110297.33,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/AVA_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "MAN",
+      "price_usd": 0.0008859,
+      "change_24h_pct": 18.21,
+      "volume_24h_usd": 31430.77,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/MAN_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "ERA",
+      "price_usd": 0.07626,
+      "change_24h_pct": 18.08,
+      "volume_24h_usd": 487410.93,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/ERA_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "MINIMAXG",
+      "price_usd": 23.6,
+      "change_24h_pct": 17.82,
+      "volume_24h_usd": 134522.46,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/MINIMAXG_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "ACU",
+      "price_usd": 0.11534,
+      "change_24h_pct": 17.32,
+      "volume_24h_usd": 404624.65,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/ACU_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
       "symbol": "GMRT",
-      "price_usd": 0.021938,
-      "change_24h_pct": 19.97,
-      "volume_24h_usd": 1115.54,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.021445,
+      "change_24h_pct": 17.28,
+      "volume_24h_usd": 1117.73,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/GMRT_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "ARTFI",
-      "price_usd": 0.0011771,
-      "change_24h_pct": 19.27,
-      "volume_24h_usd": 1401.57,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.0011553,
+      "change_24h_pct": 17.06,
+      "volume_24h_usd": 1448.25,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/ARTFI_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "LYP",
-      "price_usd": 0.003057,
-      "change_24h_pct": 18.62,
-      "volume_24h_usd": 11701.13,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/LYP_USDT",
+      "symbol": "HORD",
+      "price_usd": 0.0003718,
+      "change_24h_pct": 16.15,
+      "volume_24h_usd": 727.9,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/HORD_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "AVA",
-      "price_usd": 0.4241,
-      "change_24h_pct": 17.67,
-      "volume_24h_usd": 116895.2,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/AVA_USDT",
+      "symbol": "INIT",
+      "price_usd": 0.15058,
+      "change_24h_pct": 16.0,
+      "volume_24h_usd": 218251.36,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/INIT_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
-      "symbol": "MINIMAXG",
-      "price_usd": 23.72,
-      "change_24h_pct": 17.48,
-      "volume_24h_usd": 134094.67,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
-      "url": "https://www.gate.com/trade/MINIMAXG_USDT",
+      "symbol": "OXY",
+      "price_usd": 0.0006728,
+      "change_24h_pct": 15.54,
+      "volume_24h_usd": 8537.47,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/OXY_USDT",
+      "state": "RESEARCH_ONLY_NOT_BUY"
+    },
+    {
+      "symbol": "BLEND",
+      "price_usd": 0.05814,
+      "change_24h_pct": 14.53,
+      "volume_24h_usd": 171167.54,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
+      "url": "https://www.gate.com/trade/BLEND_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     },
     {
       "symbol": "DMTR",
-      "price_usd": 0.008335,
-      "change_24h_pct": 17.46,
-      "volume_24h_usd": 23346.39,
-      "observed_at": "2026-10-23T22:40:40.229694+00:00",
+      "price_usd": 0.008043,
+      "change_24h_pct": 14.08,
+      "volume_24h_usd": 23276.35,
+      "observed_at": "2026-10-23T23:59:13.815196+00:00",
       "url": "https://www.gate.com/trade/DMTR_USDT",
       "state": "RESEARCH_ONLY_NOT_BUY"
     }
