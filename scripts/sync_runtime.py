@@ -37,7 +37,10 @@ def wait_for_projection(fetch, *, budget=900, clock=time.monotonic, pause=time.s
         source = fetch()
     return source
 
-source = wait_for_projection(fetch_source)
+# Do not spend 15 minutes blocking the Pages queue when private Actions are
+# down. Dashboards must publish the historical snapshot with its original
+# timestamps and explicit stale banner instead of waiting for a dead runner.
+source = wait_for_projection(fetch_source, budget=60)
 if source_age(source) > 1500:
     print("::warning::Engine projection is stale; original timestamps are preserved.")
 keys = ("generated_at", "market_observed_at", "status", "scan_outcome", "delivery_status", "delivery_confirmed", "pre_buy_count", "buy_zone_count", "evaluated_targets", "observable_coverage_pct", "error_count", "run_url", "scan_completed_at", "decisions_at", "data_quality", "observable_targets", "market_targets_attempted", "market_targets_deferred", "pre_buy_delivered", "risk_alerts_delivered", "decisions_total", "market_data_target_count", "market_data_observed_count", "market_data_coverage_pct", "market_data_observed_at", "market_data_deferred_count", "market_data_unavailable_count", "market_data_request_count", "market_data_semantics", "deep_coverage_pct", "deep_observable_targets")
