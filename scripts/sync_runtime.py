@@ -30,8 +30,14 @@ def source_age(source):
 def wait_for_projection(fetch, *, budget=900, clock=time.monotonic, pause=time.sleep):
     started = clock()
     source = fetch()
-    # Engine and Pages schedules can start together. Wait for the active
-    # engine publication instead of immediately deploying an expired snapshot.
+    # A source older than six hours cannot plausibly be caught up by waiting
+    # for one currently overlapping engine run. Publish the unchanged, stale
+    # timestamps immediately so the dashboard shows the outage truthfully.
+    # Never manufacture a new market/decision timestamp here.
+    if source_age(source) > 6 * 3600:
+        print("::warning::DASHBOARD_UPSTREAM_SCAN_OVER_6H_STALE; skip the 15-minute wait.")
+        return source
+    # For a recent overlapping scan, give the producer time to publish.
     while source_age(source) > 900 and clock() - started < budget:
         pause(min(20, max(0, budget - (clock() - started))))
         source = fetch()
@@ -47,6 +53,17 @@ keys = ("generated_at", "market_observed_at", "status", "scan_outcome", "deliver
 if not isinstance(source, dict) or not isinstance(source.get("decisions"), list):
     raise ValueError("Invalid projection")
 result = {key: source.get(key) for key in keys}
+# This diagnostic is derived from the original timestamp, never from the
+# dashboard deployment time. The browser must continue treating stale decisions
+# as historical research only; it is not an alternative signal engine.
+age_seconds = source_age(source)
+result["source_freshness"] = {
+    "source_age_minutes_at_sync": round(age_seconds / 60, 1) if age_seconds != float("inf") else None,
+    "source_is_stale_at_sync": age_seconds > 1500,
+    "source_generated_at": source.get("generated_at"),
+    "last_successful_scan_at": source.get("scan_completed_at"),
+    "semantics": "HISTORICAL_ONLY_WHEN_STALE_NO_BUY_OR_TG_ACTION",
+}
 followup = source.get("discovery_followup")
 followup_keys = ("registered", "interval_seconds", "late_after_seconds", "basic_overdue_1h", "basic_overdue_2h", "full_verification_due", "semantics")
 result["discovery_followup"] = {key: followup.get(key) for key in followup_keys} if isinstance(followup, dict) else {}
