@@ -17,15 +17,15 @@ async function main(){if(busy)return;busy=true;try{
 const res=await fetch('./data/v2-runtime-status.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);
 const d=await res.json();if(!Array.isArray(d.decisions))throw Error('דוח לא תקין');
 const ms=Date.parse(d.market_observed_at),age=(Date.now()-ms)/60000,fresh=Number.isFinite(age)&&age>=0&&age<25&&d.status==='LIVE',rows=d.decisions;
-$('health').textContent=fresh?('● סריקה עדכנית'+(d.data_quality==='LIMITED'?' · אימות עומק חלקי':'')):'● אין סריקה עדכנית';
-$('health').className='status '+(fresh?'green':'yellow');
+$('health').textContent=fresh?('● סריקה עדכנית'+(d.data_quality==='LIMITED'?' · אימות עומק חלקי':'')):(age>360?'● מנוע הסריקה אינו מעדכן נתונים':'● אין סריקה עדכנית');
+$('health').className='status '+(fresh?'green':age>360?'red':'yellow');
 const incident=$('incident');
 incident.style.display=fresh?'none':'block';
 if(!fresh){
   const last=Number.isFinite(ms)?new Date(ms).toLocaleString('he-IL',{timeZone:'Asia/Jerusalem'}):'לא ידוע';
   const ageLabel=Number.isFinite(age)&&age>=0?Math.floor(age)+' דקות':'לא ידוע';
   incident.replaceChildren();
-  const warning=document.createElement('strong');warning.textContent='⚠ אין סריקה חיה — הנתונים כאן היסטוריים בלבד';
+  const warning=document.createElement('strong');warning.textContent=age>360?'⚠ מנוע הסריקה אינו מעדכן נתונים — אין איתותי קנייה חיים':'⚠ אין סריקה חיה — הנתונים כאן היסטוריים בלבד';
   const detail=document.createElement('div');detail.textContent='סריקה אחרונה: '+last+' (שעון ישראל). גיל נתוני השוק: '+ageLabel+'. אין להסיק מהרשימה אישור PRE-BUY / BUY עכשווי.';
   const link=document.createElement('a');link.href='https://github.com/bitcoinforu2-ui/Wallet500-v2/actions';link.textContent='בדיקת הפעלת המנוע ב-GitHub ↗';link.target='_blank';link.rel='noopener noreferrer';
   link.style.color='#19e3ff';
