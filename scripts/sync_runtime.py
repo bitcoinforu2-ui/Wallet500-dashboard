@@ -91,6 +91,8 @@ result["new_pool_shadow"] = {
     "mode": "RESEARCH_ONLY_NEVER_BUY",
     "generated_at": new_pool.get("generated_at"),
     "networks_failed": new_pool.get("networks_failed"),
+    "networks_healthy": new_pool.get("networks_healthy"),
+    "provider_status": new_pool.get("provider_status"),
     "pools_verified_identity_and_age": new_pool.get("pools_verified_identity_and_age"),
     "pools": [{k: row.get(k) for k in pool_fields} for row in new_pool_signals[:10] if isinstance(row, dict)],
 }
@@ -102,6 +104,7 @@ result["early_pulse_shadow"] = {
     "probes_verified_closed_candles": pulse.get("probes_verified_closed_candles"),
     "probes_missing_or_rejected": pulse.get("probes_missing_or_rejected"),
     "pulse_count": pulse.get("pulse_count"),
+    "divergence_research_count": pulse.get("divergence_research_count"),
     "signals": [{k: row.get(k) for k in pulse_fields} for row in pulse_signals[:8] if isinstance(row, dict)],
 }
 
@@ -113,7 +116,7 @@ study_out = {}
 for horizon in ("60m", "240m"):
     entry = study_summary.get(horizon) if isinstance(study_summary.get(horizon), dict) else {}
     clean = {}
-    for cohort in ("pulse", "matched_control", "near_miss_control", "background_control"):
+    for cohort in ("pulse", "volume_price_divergence", "matched_control", "near_miss_control", "background_control"):
         raw = entry.get(cohort) if isinstance(entry.get(cohort), dict) else {}
         clean[cohort] = {k: raw.get(k) for k in ("matured", "observed", "missing_window",
                                                "median_gross_reference_change_pct",
