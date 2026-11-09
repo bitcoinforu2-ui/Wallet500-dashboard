@@ -79,6 +79,22 @@ pulse_fields = ("currency_pair", "symbol", "status", "observed_at",
                 "quote_volume_5m_usd", "quote_volume_15m_usd",
                 "volume_5m_multiple", "volume_15m_multiple",
                 "price_change_5m_pct", "research_priority_score")
+# Newly created pools: expose only verified exact addresses and public market facts.
+# No pool alone can create a BUY or Telegram action.
+new_pool = source.get("new_pool_shadow")
+new_pool = new_pool if isinstance(new_pool, dict) else {}
+new_pool_signals = new_pool.get("pools") if isinstance(new_pool.get("pools"), list) else []
+pool_fields = ("network", "pool_address", "token_address", "symbol", "created_at",
+               "age_minutes_at_scan", "liquidity_usd", "volume_5m_usd",
+               "buy_transactions_5m", "sell_transactions_5m", "link", "status")
+result["new_pool_shadow"] = {
+    "mode": "RESEARCH_ONLY_NEVER_BUY",
+    "generated_at": new_pool.get("generated_at"),
+    "networks_failed": new_pool.get("networks_failed"),
+    "pools_verified_identity_and_age": new_pool.get("pools_verified_identity_and_age"),
+    "pools": [{k: row.get(k) for k in pool_fields} for row in new_pool_signals[:10] if isinstance(row, dict)],
+}
+
 result["early_pulse_shadow"] = {
     "mode": "SHADOW_RESEARCH_ONLY_NEVER_BUY",
     "generated_at": pulse.get("generated_at"),
