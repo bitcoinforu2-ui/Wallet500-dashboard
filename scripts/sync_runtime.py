@@ -113,12 +113,13 @@ study_out = {}
 for horizon in ("60m", "240m"):
     entry = study_summary.get(horizon) if isinstance(study_summary.get(horizon), dict) else {}
     clean = {}
-    for cohort in ("pulse", "matched_control"):
+    for cohort in ("pulse", "matched_control", "near_miss_control", "background_control"):
         raw = entry.get(cohort) if isinstance(entry.get(cohort), dict) else {}
         clean[cohort] = {k: raw.get(k) for k in ("matured", "observed", "missing_window",
                                                "median_gross_reference_change_pct",
                                                "fraction_above_21pct")}
     clean["matched_pairs_observed"] = entry.get("matched_pairs_observed")
+    clean["sampled_unflagged_up_21pct"] = entry.get("sampled_unflagged_up_21pct")
     clean["median_paired_difference_pct_points"] = entry.get("median_paired_difference_pct_points")
     clean["evidence_of_outperformance"] = entry.get("evidence_of_outperformance")
     study_out[horizon] = clean
