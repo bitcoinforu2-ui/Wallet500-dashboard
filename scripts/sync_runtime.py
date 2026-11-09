@@ -86,7 +86,7 @@ new_pool = new_pool if isinstance(new_pool, dict) else {}
 new_pool_signals = new_pool.get("pools") if isinstance(new_pool.get("pools"), list) else []
 pool_fields = ("network", "pool_address", "token_address", "symbol", "created_at",
                "age_minutes_at_scan", "liquidity_usd", "volume_5m_usd",
-               "buy_transactions_5m", "sell_transactions_5m", "link", "status")
+               "buy_transactions_5m", "sell_transactions_5m", "link", "status", "triage_flags", "triage_status")
 result["new_pool_shadow"] = {
     "mode": "RESEARCH_ONLY_NEVER_BUY",
     "generated_at": new_pool.get("generated_at"),
@@ -103,6 +103,30 @@ result["early_pulse_shadow"] = {
     "probes_missing_or_rejected": pulse.get("probes_missing_or_rejected"),
     "pulse_count": pulse.get("pulse_count"),
     "signals": [{k: row.get(k) for k in pulse_fields} for row in pulse_signals[:8] if isinstance(row, dict)],
+}
+
+# Sanitized, aggregate-only prospective study; NEVER export individual call records.
+study_source = source.get("early_pulse_study")
+study_source = study_source if isinstance(study_source, dict) else {}
+study_summary = study_source.get("summary") if isinstance(study_source.get("summary"), dict) else {}
+study_out = {}
+for horizon in ("60m", "240m"):
+    entry = study_summary.get(horizon) if isinstance(study_summary.get(horizon), dict) else {}
+    clean = {}
+    for cohort in ("pulse", "matched_control"):
+        raw = entry.get(cohort) if isinstance(entry.get(cohort), dict) else {}
+        clean[cohort] = {k: raw.get(k) for k in ("matured", "observed", "missing_window",
+                                               "median_gross_reference_change_pct",
+                                               "fraction_above_21pct")}
+    clean["matched_pairs_observed"] = entry.get("matched_pairs_observed")
+    clean["median_paired_difference_pct_points"] = entry.get("median_paired_difference_pct_points")
+    clean["evidence_of_outperformance"] = entry.get("evidence_of_outperformance")
+    study_out[horizon] = clean
+result["early_pulse_study"] = {
+    "mode": "PROSPECTIVE_RESEARCH_NO_BUY",
+    "updated_at": study_source.get("updated_at"),
+    "total_events": study_source.get("total_events"),
+    "summary": study_out,
 }
 
 target = Path("data/v2-runtime-status.json")
