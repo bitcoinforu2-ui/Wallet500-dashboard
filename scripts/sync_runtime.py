@@ -69,6 +69,26 @@ followup_keys = ("registered", "interval_seconds", "late_after_seconds", "basic_
 result["discovery_followup"] = {key: followup.get(key) for key in followup_keys} if isinstance(followup, dict) else {}
 result["decisions"] = [{key: row.get(key) for key in ("symbol", "identity_key", "state", "pre_buy", "reasons", "observed_at", "observable", "market", "market_observation")} for row in source["decisions"][:100] if isinstance(row, dict)]
 result["discovery_movers"] = [{key: row.get(key) for key in ("symbol", "price_usd", "change_24h_pct", "volume_24h_usd", "observed_at", "url", "state")} for row in (source.get("discovery_movers") or [])[:30] if isinstance(row, dict)]
+
+# Forward only the explicitly sanitized research-only pulse subset; no private
+# wallet IDs, logs, Telegram configuration, or decision authority is published.
+pulse = source.get("early_pulse_shadow")
+pulse = pulse if isinstance(pulse, dict) else {}
+pulse_signals = pulse.get("signals") if isinstance(pulse.get("signals"), list) else []
+pulse_fields = ("currency_pair", "symbol", "status", "observed_at",
+                "quote_volume_5m_usd", "quote_volume_15m_usd",
+                "volume_5m_multiple", "volume_15m_multiple",
+                "price_change_5m_pct", "research_priority_score")
+result["early_pulse_shadow"] = {
+    "mode": "SHADOW_RESEARCH_ONLY_NEVER_BUY",
+    "generated_at": pulse.get("generated_at"),
+    "probes_attempted": pulse.get("probes_attempted"),
+    "probes_verified_closed_candles": pulse.get("probes_verified_closed_candles"),
+    "probes_missing_or_rejected": pulse.get("probes_missing_or_rejected"),
+    "pulse_count": pulse.get("pulse_count"),
+    "signals": [{k: row.get(k) for k in pulse_fields} for row in pulse_signals[:8] if isinstance(row, dict)],
+}
+
 target = Path("data/v2-runtime-status.json")
 target.parent.mkdir(exist_ok=True)
 target.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
