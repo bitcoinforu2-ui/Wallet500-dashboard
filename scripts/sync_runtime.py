@@ -121,7 +121,7 @@ for horizon in ("60m", "240m"):
         clean[cohort] = {k: raw.get(k) for k in ("matured", "observed", "missing_window",
                                                "median_gross_reference_change_pct", "outcome_capture_pct",
                                                "fraction_above_21pct")}
-for k in ("total_matured", "total_observed", "outcome_capture_pct",
+    for k in ("total_matured", "total_observed", "outcome_capture_pct",
               "coverage_state", "sampled_unflagged_observed"):
         clean[k] = entry.get(k)
     clean["matched_pairs_observed"] = entry.get("matched_pairs_observed")
