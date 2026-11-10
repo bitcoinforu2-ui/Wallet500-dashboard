@@ -119,8 +119,11 @@ for horizon in ("60m", "240m"):
     for cohort in ("pulse", "volume_price_divergence", "matched_control", "near_miss_control", "background_control"):
         raw = entry.get(cohort) if isinstance(entry.get(cohort), dict) else {}
         clean[cohort] = {k: raw.get(k) for k in ("matured", "observed", "missing_window",
-                                               "median_gross_reference_change_pct",
+                                               "median_gross_reference_change_pct", "outcome_capture_pct",
                                                "fraction_above_21pct")}
+for k in ("total_matured", "total_observed", "outcome_capture_pct",
+              "coverage_state", "sampled_unflagged_observed"):
+        clean[k] = entry.get(k)
     clean["matched_pairs_observed"] = entry.get("matched_pairs_observed")
     clean["sampled_unflagged_up_21pct"] = entry.get("sampled_unflagged_up_21pct")
     clean["median_paired_difference_pct_points"] = entry.get("median_paired_difference_pct_points")
