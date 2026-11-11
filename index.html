@@ -50,7 +50,7 @@ $('fnlist').innerHTML=empty('היסטוריית פספוסים וביצועים 
 const np=d.new_pool_shadow&&typeof d.new_pool_shadow==='object'?d.new_pool_shadow:{};
 const npStamp=Date.parse(np.generated_at),npAge=(Date.now()-npStamp)/60000,npFresh=fresh&&Number.isFinite(npAge)&&npAge>=0&&npAge<25;
 const poolRows=Array.isArray(np.pools)?np.pools.slice(0,8):[];
-const npSummary=np.provider_status==='ALL_FAILED'?'מקורות הבריכות נכשלו — מספר הבריכות אינו ידוע':np.pools_verified_identity_and_age==null?'טרם התקבל דוח בריכות חדשות':('בריכות חדשות עם זהות וגיל מאומתים: '+num(np.pools_verified_identity_and_age));
+const npAllFailed=np.provider_status==='ALL_FAILED'||(np.provider_status==null&&Array.isArray(np.networks_failed)&&np.networks_failed.length>=3);const npSummary=npAllFailed?'מקורות הבריכות נכשלו — מספר הבריכות אינו ידוע':np.pools_verified_identity_and_age==null?'טרם התקבל דוח בריכות חדשות':('בריכות חדשות עם זהות וגיל מאומתים: '+num(np.pools_verified_identity_and_age));
 const npErrors=Array.isArray(np.networks_failed)&&np.networks_failed.length?' · מקורות נתונים שנכשלו: '+np.networks_failed.length+(np.networks_failed.some(x=>Array.isArray(x.attempts)&&x.attempts.some(a=>a.http_status===429))?' · מגבלת ספק HTTP 429':''):'';
 $('newPools').innerHTML='<div class="candidate" style="grid-column:1/-1"><div class="reasons">'+esc(npSummary)+esc(npErrors)+' · '+(npFresh?'מדידה עדכנית':'היסטורי או לא מעודכן')+' · אינו BUY</div></div>'+poolRows.map(r=>{
  const link=typeof r.link==='string'&&/^https:\/\/www\.geckoterminal\.com\/(solana|base|bsc)\/pools\/([1-9A-HJ-NP-Za-km-z]{32,44}|0x[0-9a-fA-F]{40})$/.test(r.link)?r.link:null;
