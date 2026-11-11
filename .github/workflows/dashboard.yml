@@ -22,6 +22,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Test dashboard sync credential and historical-snapshot contract
+        run: python3 -m unittest discover -s tests -p 'test_dashboard_sync_contract.py'
       - name: Sync the sanitized engine projection
         env:
           SOURCE_TOKEN: ${{ secrets.DASHBOARD_SOURCE_TOKEN }}
