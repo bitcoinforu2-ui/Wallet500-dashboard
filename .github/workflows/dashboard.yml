@@ -27,6 +27,7 @@ jobs:
           SOURCE_TOKEN: ${{ secrets.DASHBOARD_SOURCE_TOKEN }}
         run: python3 scripts/sync_runtime.py
       - name: Save changed projection
+        id: save_projection
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -34,25 +35,33 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "data: sync engine dashboard projection [skip ci]"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
       - name: Build static dashboard
+        if: ${{ github.event_name != 'schedule' || steps.save_projection.outputs.changed == 'true' }}
         run: |
           mkdir -p _site/data
           cp index.html _site/
           cp data/v2-runtime-status.json _site/data/
           touch _site/.nojekyll
       - name: Validate dashboard HTML, JS and sanitized data
+        if: ${{ github.event_name != 'schedule' || steps.save_projection.outputs.changed == 'true' }}
         run: |
           python3 -m py_compile scripts/sync_runtime.py
           python3 scripts/validate_dashboard.py _site/index.html _site/data/v2-runtime-status.json
       - uses: actions/configure-pages@v5
+        if: ${{ github.event_name != 'schedule' || steps.save_projection.outputs.changed == 'true' }}
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ github.event_name != 'schedule' || steps.save_projection.outputs.changed == 'true' }}
         with:
           path: _site
           name: pages-${{ github.run_attempt }}
       - uses: actions/deploy-pages@v4
+        if: ${{ github.event_name != 'schedule' || steps.save_projection.outputs.changed == 'true' }}
         id: deploy
         with:
           artifact_name: pages-${{ github.run_attempt }}
