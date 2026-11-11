@@ -34,5 +34,16 @@ class DashboardSourceContractTest(unittest.TestCase):
         self.assertIn("existing dated snapshot", result.stdout)
 
 
+    def test_health_requires_cadence_not_just_recent_timestamp(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn("const cadenceHealthy=d.last_interval_meets_target===true;", html)
+        self.assertIn("(cadenceHealthy?'green':'yellow')", html)
+
+    def test_missing_pool_provider_status_does_not_fake_zero_pools(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn("const npAllFailed=", html)
+        self.assertIn("np.networks_failed.length>=3", html)
+
+
 if __name__ == "__main__":
     unittest.main()
