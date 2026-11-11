@@ -17,8 +17,9 @@ async function main(){if(busy)return;busy=true;try{
 const res=await fetch('./data/v2-runtime-status.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);
 const d=await res.json();if(!Array.isArray(d.decisions))throw Error('דוח לא תקין');
 const ms=Date.parse(d.market_observed_at),age=(Date.now()-ms)/60000,fresh=Number.isFinite(age)&&age>=0&&age<25&&d.status==='LIVE',rows=d.decisions;
-$('health').textContent=fresh?('● סריקה עדכנית'+(d.data_quality==='LIMITED'?' · אימות עומק חלקי':'')):(age>360?'● מנוע הסריקה אינו מעדכן נתונים':'● אין סריקה עדכנית');
-$('health').className='status '+(fresh?'green':age>360?'red':'yellow');
+const cadenceHealthy=d.last_interval_meets_target===true;
+$('health').textContent=fresh?('● סריקה עדכנית'+(cadenceHealthy?'':' · קצב סריקות לא תקין')+(d.data_quality==='LIMITED'?' · אימות עומק חלקי':'')):(age>360?'● מנוע הסריקה אינו מעדכן נתונים':'● אין סריקה עדכנית');
+$('health').className='status '+(fresh?(cadenceHealthy?'green':'yellow'):age>360?'red':'yellow');
 const incident=$('incident');
 incident.style.display=fresh?'none':'block';
 if(!fresh){
