@@ -5,7 +5,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 token = os.environ.get("SOURCE_TOKEN", "")
 if not token:
-    print("::warning::DASHBOARD_SOURCE_TOKEN is missing; retained snapshot will expire normally.")
+    # Scheduled syncs must fail visibly rather than masquerade as successful
+    # refreshes. Push/manual deployments may safely serve an existing snapshot,
+    # whose original observation timestamps remain unchanged.
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+        raise SystemExit("DASHBOARD_SOURCE_TOKEN_MISSING: scheduled refresh cannot run")
+    print("::warning::DASHBOARD_SOURCE_TOKEN missing; serving existing dated snapshot only.")
     raise SystemExit(0)
 url = "https://api.github.com/repos/bitcoinforu2-ui/Wallet500-v2/contents/data/v2-runtime-status.json?ref=main"
 request = urllib.request.Request(url, headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github.raw+json", "Cache-Control": "no-cache", "X-GitHub-Api-Version": "2022-11-28"})
