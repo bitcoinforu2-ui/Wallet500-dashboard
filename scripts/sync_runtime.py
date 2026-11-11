@@ -49,6 +49,30 @@ def wait_for_projection(fetch, *, budget=900, clock=time.monotonic, pause=time.s
 source = wait_for_projection(fetch_source, budget=60)
 if source_age(source) > 1500:
     print("::warning::Engine projection is stale; original timestamps are preserved.")
+
+# Do not re-commit or redeploy the dashboard merely because the wall-clock age
+# changed. The browser calculates age from market_observed_at at display time.
+# A repeated/older source must never replace the last verified newer projection.
+def trusted_generated_at(value):
+    try:
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        return dt.astimezone(timezone.utc) if dt.tzinfo else None
+    except (ValueError, TypeError, OverflowError):
+        return None
+
+source_stamp = trusted_generated_at(source.get("generated_at"))
+if source_stamp is None:
+    raise ValueError("Upstream projection has no valid, timezone-aware generated_at")
+target = Path("data/v2-runtime-status.json")
+if target.exists():
+    try:
+        previous = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous = {}
+    previous_stamp = trusted_generated_at(previous.get("generated_at")) if isinstance(previous, dict) else None
+    if previous_stamp is not None and source_stamp <= previous_stamp:
+        print("DASHBOARD_SYNC_NO_NEW_SOURCE; preserve verified projection and skip redundant commit.")
+        raise SystemExit(0)
 keys = ("generated_at", "market_observed_at", "cadence_target_minutes", "last_observation_gap_minutes", "last_interval_meets_target", "status", "scan_outcome", "delivery_status", "delivery_confirmed", "pre_buy_count", "buy_zone_count", "evaluated_targets", "observable_coverage_pct", "error_count", "run_url", "scan_completed_at", "decisions_at", "data_quality", "observable_targets", "market_targets_attempted", "market_targets_deferred", "pre_buy_delivered", "pre_buy_delivered_symbols", "final_buy_delivered_symbols", "telegram_delivery_ledger_warnings", "telegram_delivery_semantics", "risk_alerts_delivered", "decisions_total", "market_data_target_count", "market_data_observed_count", "market_data_coverage_pct", "market_data_observed_at", "market_data_deferred_count", "market_data_unavailable_count", "market_data_request_count", "market_data_semantics", "deep_coverage_pct", "deep_observable_targets")
 if not isinstance(source, dict) or not isinstance(source.get("decisions"), list):
     raise ValueError("Invalid projection")
