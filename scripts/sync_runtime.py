@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Copy only the explicit dashboard projection from the private engine."""
-import json, os, time, urllib.request
+import json, os, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 from pathlib import Path
 token = os.environ.get("SOURCE_TOKEN", "")
@@ -15,8 +15,29 @@ if not token:
 url = "https://api.github.com/repos/bitcoinforu2-ui/Wallet500-v2/contents/data/v2-runtime-status.json?ref=main"
 request = urllib.request.Request(url, headers={"Authorization": "Bearer " + token, "Accept": "application/vnd.github.raw+json", "Cache-Control": "no-cache", "X-GitHub-Api-Version": "2022-11-28"})
 def fetch_source():
-    with urllib.request.urlopen(request, timeout=30) as response:
-        raw = response.read(2_000_001)
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            raw = response.read(2_000_001)
+    except urllib.error.HTTPError as error:
+        # Keep scheduled refresh fail-closed, but tell the maintainer which
+        # GitHub credential/access boundary needs repair. Never log the token.
+        if error.code == 401:
+            raise SystemExit(
+                "DASHBOARD_SOURCE_TOKEN_REJECTED_HTTP_401: "
+                "replace the expired/invalid DASHBOARD_SOURCE_TOKEN Actions secret "
+                "with a token that has Contents:read access to private Wallet500-v2."
+            ) from None
+        if error.code == 403:
+            raise SystemExit(
+                "DASHBOARD_SOURCE_ACCESS_DENIED_HTTP_403: "
+                "check token permissions, repository selection, and GitHub policy."
+            ) from None
+        if error.code == 404:
+            raise SystemExit(
+                "DASHBOARD_SOURCE_INACCESSIBLE_HTTP_404: "
+                "verify the private repository is selected for the token and the projection path exists."
+            ) from None
+        raise
     if len(raw) > 2_000_000:
         raise ValueError("Projection exceeds size limit")
     source = json.loads(raw)
