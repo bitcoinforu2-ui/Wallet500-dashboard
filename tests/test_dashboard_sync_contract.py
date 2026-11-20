@@ -46,11 +46,11 @@ class DashboardSourceContractTest(unittest.TestCase):
                 env["SOURCE_TOKEN"] = "test-secret-never-print"
                 env["GITHUB_EVENT_NAME"] = "schedule"
                 program = (
-                    "import runpy, urllib.request, urllib.error\\n"
-                    "def reject(request, timeout=30):\\n"
-                    f"    raise urllib.error.HTTPError(request.full_url, {http_status}, 'Denied', None, None)\\n"
-                    "urllib.request.urlopen = reject\\n"
-                    f"runpy.run_path({str(SCRIPT)!r}, run_name='__main__')\\n"
+                    "import runpy, urllib.request, urllib.error\n"
+                    "def reject(request, timeout=30):\n"
+                    f"    raise urllib.error.HTTPError(request.full_url, {http_status}, 'Denied', None, None)\n"
+                    "urllib.request.urlopen = reject\n"
+                    f"runpy.run_path({str(SCRIPT)!r}, run_name='__main__')\n"
                 )
                 with tempfile.TemporaryDirectory() as cwd:
                     result = subprocess.run(
